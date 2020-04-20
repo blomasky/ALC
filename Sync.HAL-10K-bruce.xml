@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><logs><log type="Controllers">
+<?xml version="1.0" encoding="utf-8"?><logs><log type="Controllers">
   <c y="NodeSet" t="2020-04-15T12:47:18">
     <controller name="Customers" />
     <view id="grid1" />
@@ -1059,8 +1059,295 @@
     <update>
       <HeaderText />
     </update>
-  </c>
-</log><log type="Application">
+  </c><c y="NodeSet" t="2020-04-20T15:12:23"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Basversion" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:23"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Bastimestamp" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:42"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="OnlyPocketWood" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:42"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="HeadingForTripCustomerSummary" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:43"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="GenericMsg" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:43"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedtripcalendarRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:43"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedtripcalendarRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:43"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedtripcalendarRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:44"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Length" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:44"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedcustomerdashboardRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:44"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedcustomerdashboardRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:44"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedcustomerdashboardRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:45"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CadunDigTo" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:45"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SeeAllCustomers" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:45"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="VendorIdforPurchaseAdvisory" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:45"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CadskipIntact" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:46"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="ShowOrderLinesBelowStock" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:46"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="OnlyStock" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:46"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="QuoteHeader" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:47"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="FirsttDateForTripQuery" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:47"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="DateLastPaupdated" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:47"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="ProjectedCost" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:47"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="ScriptText" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:48"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Cadhandle" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:48"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedcustomercontactRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:48"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedcustomercontactRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:48"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedcustomercontactRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:49"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="FlagToAddUnit" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:49"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedpurchaselineRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:49"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedpurchaselineRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:49"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedpurchaselineRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:50"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedSectorID" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:50"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="LastUnit" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:50"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="UmavailableFormatted" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:50"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CadonlyTripped" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:51"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CustomerforquotequeryRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:51"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CustomerforquotequeryRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:51"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CustomerforquotequeryRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:51"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="NetCost" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:52"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CadmaxNoOfSource" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:52"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="PurchaseAdvisoryFromDate" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:52"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="PreviousNoDaysForPurchaseAdvisory" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:52"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SourceUnitNumber" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:52"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="PaymentBatchHeaderID" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:53"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedunitRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:53"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedunitRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:53"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedunitRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:53"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SuggestedPrice" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:54"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedtemplateRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:54"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedtemplateRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:54"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedtemplateRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:54"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Dim2" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:55"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="EmailForReports" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:55"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="UmopenPoformatted" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:55"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Dim1" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:55"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="LastOrderNumber" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:56"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Route" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:56"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="FilterReminderCustomers" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:56"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="DateFilterForQuoteQuery" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:56"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CadshowDesigned" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:57"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="ItemSearch3" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:57"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="ItemSearch2" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:57"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="QtyToAddToPo" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:57"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="TripDate" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:57"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="NoTripDashboard" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:58"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="NoDaysForPurchaseAdvisory" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:58"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CadignoreDates" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:58"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Cadplus" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:58"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="TerminalSalesDate" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:59"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelecteditemRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:59"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelecteditemRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:59"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelecteditemRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:59"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="NumberOpenQuotes" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:12:59"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="ItemID" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:00"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedpurchaseorderRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:00"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedpurchaseorderRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:00"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedpurchaseorderRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:00"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="DropShipAddress" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:01"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Tank" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:01"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="DesignerComments" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:01"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="QuotePo" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:01"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Cadcustomer" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:01"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="FirstUnit" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:02"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="PurchaseAdvisoryThruDate" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:02"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Cadwide" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:02"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="PrintOrderAcknowledgement" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:02"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedterminalitemRen" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:02"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedterminalitemRid" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:03"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="SelectedterminalitemRma" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:03"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CadsourceUnitNumber" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:03"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="CaddrillNumber" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:29"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Rtl" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:30"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="Locale" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:30"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="TimeZone" />
+<delete /></c><c y="NodeSet" t="2020-04-20T15:13:41"><controller name="RegularUser" />
+<view id="grid1" />
+<dataField fieldName="ID" />
+<update>
+  <Hidden>true</Hidden>
+  <DataViewShowInSummary>false</DataViewShowInSummary>
+</update></c></log><log type="Application">
   <c y="NodeSet" t="2020-04-15T13:03:24">
     <page name="Home" />
     <update>
