@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app", "app\", "{E13E17EE-7F
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "52418"
+		SlnRelativePath = "app\"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code On Time Items", "Code On Time Items", "{38E9DDE3-048A-41B7-B092-4398F32ECBCA}"
@@ -28,6 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code On Time Items", "Code 
 		ClientLibrary.en-US.txt = ClientLibrary.en-US.txt
 		DataAquarium.Project.xml = DataAquarium.Project.xml
 		DataAquarium.Version.xml = DataAquarium.Version.xml
+		Sync.HAL-10K-bruce.xml = Sync.HAL-10K-bruce.xml
 	EndProjectSection
 EndProject
 Global
