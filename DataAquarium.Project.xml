@@ -1,0 +1,43 @@
+<!-- 
+  This file is provided to store the settings for your Data Aquarium project. 
+  You can safely delete this file if no further code generation is planned.
+-->
+<project compatibility="20111118" dataModel="required" appFolder="app" displayName="ALC" group="" type="Web Site Factory" subscriptionLevel="Unlimited" name="ALC" prettyName="ALC" appGenVersion="" codeDomProvider="CSharp" targetFramework="4.6" userInterface="TouchUI" pageImplementation="html" sourceControl="git" xmlns="urn:schemas-codeontime-com:data-aquarium-project">
+  <connectionString hostDatabaseSharing="false" sessionStateMode="None">Data Source=american,46257;Initial Catalog=CodeOnTime;Persist Security Info=True;User ID=sa;Password=Aj54321$;</connectionString>
+  <providerName>System.Data.SqlClient</providerName>
+  <namespace>FreeTrial</namespace>
+  <webServer run="true" port="58204" preview="Browser" client="">
+    <webConfig></webConfig>
+  </webServer>
+  <features useSaveAndNew="true" pageHeader="American Lumber Co. Inc." copyright="" annotations="false" annotationsPath="" newColumn="true" floating="false" maxGridFields="100" multiSelect="false" batchEdit="false" advancedSearch="false" advancedLookup="false" relationshipExplorer="true" enablePermalinks="true" enableHistory="true" enableTransactions="false" showModalForms="true" tabViewSelection="4">
+    <navigation detectUnderscoreSeparatedSchema="" />
+    <blob allowUploadOnInsert="true" />
+    <framework scriptOnly="true" useExtenders="false" />
+    <grid actionColumn="true" />
+    <touch desktopDisplayDensity="Condensed" mobileDisplayDensity="Auto" transitions="slide" sidebar="Landscape" labelsInList="DisplayedBelow" initialListMode="SeeAll" menu="toolbar" promoteActions="true" smartDates="true" mapApiIdentifier="" mapApiIdentifierMobile="" />
+    <cms searchEngine="" analysisEngine="" analysisOnDataPages="false" />
+    <ease urlHashing="false">
+      <auditing></auditing>
+    </ease>
+    <packageProperties></packageProperties>
+    <smtp deliveryMethod="Network" deliveryFormat="" from="" clientDomain="" targetName="" host="" port="" defaultCredentials="true" enableSsl="false" username="" password="" />
+    <addons OfflineSync="" ContentMaker="" />
+  </features>
+  <reports enabled="true" version="12" />
+  <host path="" url="" />
+  <databaseObjectFilter generate="ControllersAndPages"></databaseObjectFilter>
+  <bll normalizeModelNames="true" discoveryDepth="3" labelFormatExpression="" selectMethod="Select" selectSingleMethod="SelectSingle" insertMethod="Insert" updateMethod="Update" deleteMethod="Delete" generateSharedBusinessRules="false" includeViews="true" tabViewSelection="0">
+    <fieldMap></fieldMap>
+    <keys></keys>
+    <fieldsToIgnore></fieldsToIgnore>
+    <fieldsToHide></fieldsToHide>
+    <customLabels></customLabels>
+  </bll>
+  <membership enabled="false" providerName="System.Data.SqlClient" connectionString="" windowsAuthentication="false" activeDirectory="false" customSecurity="false" dedicatedLogin="false" displayRememberMe="true" rememberMeSet="false" displaySignUp="true" displayPasswordRecovery="true" displayMyAccount="true" displayHelp="true" idleUserDetectionTimeout="-1" tabViewSelection="0" validationKey="BBE82619FDED14DA19AC94C2839997C6CA4B0C756C760EF0F183DAF8DA3C85C2FC917FEC226C70919C60B52BF3711A9B4957FD8CE8F3649557257B171EF55C91">
+    <adConfig></adConfig>
+    <config></config>
+  </membership>
+  <globalization uiCulture="en-US" culture="en-US" enableClientBasedCulture="false" supportedCultures="en-US,en-US; " googleTranslateApiKey="" />
+  <layout name="Classic" menuStyle="MultiLevel" />
+  <theme name="Granite" />
+</project>

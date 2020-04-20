@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?><logs><log type="Controllers">
+  <c y="NodeSet" t="2020-04-15T12:47:18">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="DateFieldRepChanged" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:47:19">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="DeliveryComments" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:47:19">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="ProjectedDateNextContact" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:47:19">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="DateInactivated" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:47:33">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="PsSectorRen" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:47:37">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="PsSectorRma" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:47:45">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Active" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:47:52">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="ID" />
+    <after>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="Name" />
+    </after>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:02">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Name" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="Add1" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:08">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Add1" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="Add2" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:14">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Add2" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="City" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:19">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="City" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="State" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:24">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Email" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="Zip" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:28">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Zip" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:40">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="FieldRep" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="OutsideFieldRep" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:47">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Email" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="Phone" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:48:49">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="State" />
+    <move>
+      <controller name="Customers" />
+      <view id="grid1" />
+      <dataField fieldName="Phone" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:49:00">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="DesignComments" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:49:05">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="HoldDesign" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:49:08">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="ContractorFlag" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:49:19">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="DateAdded" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:49:22">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="LastOrder" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:49:26">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="LastYearSales" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:50:47">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="ID" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:51:13">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="PsSectorRid" />
+    <update>
+      <HyperlinkFormatString />
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:51:48">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <update>
+      <FilterExpression>Active = 'A'</FilterExpression>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:54:47">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <update>
+      <ShowInSelector>false</ShowInSelector>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:57:52">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="OutsideFieldRep" />
+    <update>
+      <HeaderText>O Rep</HeaderText>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:58:14">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="PsSectorRid" />
+    <update>
+      <HeaderText>Sector</HeaderText>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:59:17">
+    <controller name="Customers" />
+    <field name="PsSectorRname" />
+    <update>
+      <Label>Sector</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T12:59:58">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Phone" />
+    <update>
+      <Columns>20</Columns>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:00:02">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Phone" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:07:31">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Add2" />
+    <update>
+      <Columns>20</Columns>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:07:41">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Name" />
+    <update>
+      <Columns>48</Columns>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:08:10">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Add1" />
+    <update>
+      <Columns>20</Columns>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:08:16">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Add1" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:09:24">
+    <controller name="Customers" />
+    <field name="Name" />
+    <update>
+      <Length>48</Length>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:11:07">
+    <controller name="Customers" />
+    <field name="Name" />
+    <update>
+      <Length>40</Length>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:11:26">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="Name" />
+    <update>
+      <Columns>60</Columns>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:16:16">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <update>
+      <HeaderText />
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:16:50">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <insert type="category">
+      <HeaderText>2nd Category</HeaderText>
+      <Flow>NewColumn</Flow>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:17:05">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="ID" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:17:20">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="ID" />
+    <after>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Name" />
+    </after>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:17:24">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="Name" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Add1" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:17:29">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="Add1" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Add2" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:17:35">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="Add2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="City" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:17:40">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="City" />
+    <after>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="State" />
+    </after>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:17:57">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="State" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Zip" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:18:09">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Phone" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:18:14">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Email" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:18:28">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="LastOrder" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:18:33">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="LastYearSales" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:18:40">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <dataField fieldName="LastOrder" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="DateOfLastContact" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:18:49">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="FieldRep" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="OutsideFieldRep" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:18:57">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="PsSectorRen" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:19:04">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="PsSectorRma" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:19:09">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <dataField fieldName="Email" />
+    <after>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="DateAdded" />
+    </after>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:19:20">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="DateAdded" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:20:50">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <update>
+      <HeaderText>Demographics</HeaderText>
+      <Description />
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:20:59">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <update>
+      <HeaderText>More Info</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:22:32">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <insert type="category">
+      <HeaderText>Comments</HeaderText>
+      <Flow>NewRow</Flow>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:22:39">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c3" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="DeliveryComments" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:22:48">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c3" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="DesignComments" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:23:00">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c3" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="HoldDesign" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:23:03">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c3" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="ContractorFlag" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:23:12">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <dataField fieldName="DateOfLastContact" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="ProjectedDateNextContact" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:23:19">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c1" />
+    <dataField fieldName="DateFieldRepChanged" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:27:59">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Active" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:28:01">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Trend" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:28:03">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c1" />
+      <dataField fieldName="Tier" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:28:11">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="Tier" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:34:35">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="Tier" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:39:49">
+    <controller name="Sectors" />
+    <view id="grid1" />
+    <move>
+      <controller name="Sectors" />
+      <view id="grid1" />
+      <dataField fieldName="Name" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:39:54">
+    <controller name="Sectors" />
+    <view id="grid1" />
+    <dataField fieldName="ID" />
+    <move>
+      <controller name="Sectors" />
+      <view id="grid1" />
+      <dataField fieldName="Name" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:40:03">
+    <controller name="Sectors" />
+    <view id="grid1" />
+    <dataField fieldName="ID" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:41:33">
+    <controller name="Sectors" />
+    <view id="grid1" />
+    <dataField fieldName="ID" />
+    <update>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:41:44">
+    <controller name="Sectors" />
+    <view id="grid1" />
+    <dataField fieldName="ID" />
+    <update>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:13">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Basversion" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:58">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Bastimestamp" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:58">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="IsPa" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:58">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Anniversary" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:58">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Ext" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:58">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Comments" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="HomePhone" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Likes" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="EmpHist" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="DateInactivated" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="ObCustomerRen" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="ObCustomerRpsSectorRname" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="ObCustomerRma" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Birthday" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Salutation" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="DateAdded" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Roles" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="FamilarName" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="DateLastChange" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Family" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="MobilePhone" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:32:59">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Title" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:33:19">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="WorkPhone" />
+    <move>
+      <controller name="CustomerContacts" />
+      <view id="grid1" />
+      <dataField fieldName="LastName" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:33:22">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="FirstName" />
+    <move>
+      <controller name="CustomerContacts" />
+      <view id="grid1" />
+      <dataField fieldName="LastName" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:33:35">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="Name" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:34:54">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="ID" />
+    <update>
+      <Hidden>true</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:35:02">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="RolesForDisplay" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:37:40">
+    <controller name="CustomerContacts" />
+    <view id="grid1" />
+    <dataField fieldName="ObCustomerRid" />
+    <update>
+      <HeaderText>Customer</HeaderText>
+      <ToolTip>Click to View the Customer Details</ToolTip>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:38:23">
+    <controller name="CustomerContacts" />
+    <field name="obCustomerRName" />
+    <update>
+      <Label>Customer</Label>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:41:52">
+    <controller name="Customers" />
+    <move>
+      <controller name="CustomerContacts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:42:58">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <move>
+      <controller name="Customers" />
+      <field name="CustomerContacts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:43:07">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="CustomerContacts" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:43:56">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <move>
+      <controller name="Customers" />
+      <field name="CustomerContacts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:44:08">
+    <controller name="Customers" />
+    <view id="createForm1" />
+    <move>
+      <controller name="Customers" />
+      <field name="CustomerContacts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:44:14">
+    <controller name="Customers" />
+    <view id="createForm1" />
+    <dataField fieldName="CustomerContacts" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:45:25">
+    <controller name="CustomerContacts" />
+    <move>
+      <controller name="Customers" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:45:39">
+    <controller name="CustomerContacts" />
+    <field name="Customers" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:51:27">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <insert type="category">
+      <Tab>Contacts</Tab>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:51:34">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c4" />
+    <move>
+      <controller name="Customers" />
+      <view id="editForm1" />
+      <category id="c3" />
+      <dataField fieldName="CustomerContacts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:51:45">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="CustomerContacts" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:52:01">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c3" />
+    <update>
+      <Tab>Comments</Tab>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:52:18">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c4" />
+    <update>
+      <HeaderText>My People</HeaderText>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:55:09">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <update>
+      <Tags>modal-max-lg</Tags>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T13:00:54">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <category id="c4" />
+    <update>
+      <HeaderText />
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T13:04:23">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="CustomerContacts" />
+    <update>
+      <Tag>show_action_bar false</Tag>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T13:08:09">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <dataField fieldName="CustomerContacts" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+      <DataViewShowActionBar>false</DataViewShowActionBar>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T13:09:13">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="CustomerContacts" />
+    <update>
+      <Tag />
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+      <DataViewShowActionBar>false</DataViewShowActionBar>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T13:10:13">
+    <controller name="Customers" />
+    <view id="editForm1" />
+    <dataField fieldName="CustomerContacts" />
+    <update>
+      <Hidden>false</Hidden>
+      <DataViewShowInSummary>false</DataViewShowInSummary>
+      <DataViewShowDescription>false</DataViewShowDescription>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T13:18:05">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <update>
+      <Tags>view-style-calendar-disabled</Tags>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T13:18:55">
+    <controller name="Customers" />
+    <view id="grid1" />
+    <update>
+      <HeaderText />
+    </update>
+  </c>
+</log><log type="Application">
+  <c y="NodeSet" t="2020-04-15T13:03:24">
+    <page name="Home" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Offline>false</Offline>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:04:18">
+    <page name="Home" />
+    <update>
+      <Style />
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:05:56">
+    <page name="Home" />
+    <update>
+      <Template>(blank)</Template>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:46:57">
+    <page name="Customers" />
+    <move>
+      <page name="Orders" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:47:13">
+    <page name="Orders" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Offline>false</Offline>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:48:25">
+    <page name="Home" />
+    <move>
+      <page name="Orders" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:48:48">
+    <page name="Home" />
+    <before>
+      <page name="Orders" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:48:58">
+    <page name="Orders" />
+    <before>
+      <page name="Home" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:04">
+    <page name="Sectors" />
+    <move>
+      <page name="CustomerContacts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:16">
+    <page name="Sectors" />
+    <before>
+      <page name="CustomerContacts" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:32">
+    <page name="Orders" />
+    <before>
+      <page name="Customers" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:50">
+    <page name="Customers" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Offline>false</Offline>
+    </update>
+  </c>
+</log></logs>

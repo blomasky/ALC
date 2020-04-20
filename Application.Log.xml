@@ -1,0 +1,77 @@
+<log xmlns="urn:schemas-codeontime-com:xml-builder" xmlns:aquarium="urn:schemas-codeontime-com:data-aquarium" xmlns:app="urn:schemas-codeontime-com:data-aquarium-application" xmlns:a="urn:schemas-codeontime-com:data-aquarium">
+  <c y="NodeSet" t="2020-04-15T13:03:24">
+    <page name="Home" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Offline>false</Offline>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:04:18">
+    <page name="Home" />
+    <update>
+      <Style />
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-15T13:05:56">
+    <page name="Home" />
+    <update>
+      <Template>(blank)</Template>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:46:57">
+    <page name="Customers" />
+    <move>
+      <page name="Orders" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:47:13">
+    <page name="Orders" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Offline>false</Offline>
+    </update>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:48:25">
+    <page name="Home" />
+    <move>
+      <page name="Orders" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:48:48">
+    <page name="Home" />
+    <before>
+      <page name="Orders" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:48:58">
+    <page name="Orders" />
+    <before>
+      <page name="Home" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:04">
+    <page name="Sectors" />
+    <move>
+      <page name="CustomerContacts" />
+    </move>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:16">
+    <page name="Sectors" />
+    <before>
+      <page name="CustomerContacts" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:32">
+    <page name="Orders" />
+    <before>
+      <page name="Customers" />
+    </before>
+  </c>
+  <c y="NodeSet" t="2020-04-20T12:49:50">
+    <page name="Customers" />
+    <update>
+      <UseExtenders>false</UseExtenders>
+      <Offline>false</Offline>
+    </update>
+  </c>
+</log>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="Sectors" alias="Sectors" created="2020-04-15T11:58:34" modified="2020-04-15T11:59:02" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="ID" fieldName="ID" label="Id" />
+    <column name="truckCost" fieldName="TruckCost" label="truck Cost" format="c" />
+    <column name="name" fieldName="Name" label="Name" />
+    <column name="tank" fieldName="Tank" label="Tank" />
+    <column name="sortOrder" fieldName="SortOrder" label="sort Order" />
+    <column name="maxStops" fieldName="MaxStops" label="max Stops" />
+    <column name="maxBMEs" fieldName="MaxBmes" label="max BM Es" />
+    <column name="avgDaysFromOrderToShipped" fieldName="AvgDaysFromOrderToShipped" label="avg Days From Order To Shipped" />
+    <column name="truckCostMultiplier" fieldName="TruckCostMultiplier" label="truck Cost Multiplier" format="c" />
+  </columns>
+</dataModel>

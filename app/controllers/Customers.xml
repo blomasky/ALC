@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="Customers" conflictDetection="overwriteChanges" label="Customers" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"Customers"."ID" "ID"
+	,"Customers"."dateFieldRepChanged" "DateFieldRepChanged"
+	,"Customers"."deliveryComments" "DeliveryComments"
+	,"Customers"."projectedDateNextContact" "ProjectedDateNextContact"
+	,"Customers"."dateInactivated" "DateInactivated"
+	,"Customers"."email" "Email"
+	,"Customers"."ranking" "Ranking"
+	,"Customers"."fieldRep" "FieldRep"
+	,"Customers"."ps_Sector_REN" "PsSectorRen"
+	,"Customers"."ps_Sector_RID" "PsSectorRid"
+	,"ps_Sector_R"."name" "PsSectorRname"
+	,"Customers"."ps_Sector_RMA" "PsSectorRma"
+	,"Customers"."lastOrder" "LastOrder"
+	,"Customers"."lastYearSales" "LastYearSales"
+	,"Customers"."active" "Active"
+	,"Customers"."zip" "Zip"
+	,"Customers"."dateAdded" "DateAdded"
+	,"Customers"."trend" "Trend"
+	,"Customers"."name" "Name"
+	,"Customers"."designComments" "DesignComments"
+	,"Customers"."phone" "Phone"
+	,"Customers"."tier" "Tier"
+	,"Customers"."city" "City"
+	,"Customers"."dateOfLastContact" "DateOfLastContact"
+	,"Customers"."add2" "Add2"
+	,"Customers"."add1" "Add1"
+	,"Customers"."state" "State"
+	,"Customers"."outsideFieldRep" "OutsideFieldRep"
+	,"Customers"."holdDesign" "HoldDesign"
+	,"Customers"."contractorFlag" "ContractorFlag"
+from "dbo"."Customers" "Customers"
+	left join "dbo"."Sectors" "ps_Sector_R" on "Customers"."ps_Sector_RID" = "ps_Sector_R"."ID"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="ID" type="Int32" allowNulls="false" isPrimaryKey="true" label="Id" />
+    <field name="DateFieldRepChanged" type="DateTime" label="date Field Rep Changed" showInSummary="true" />
+    <field name="DeliveryComments" type="String" allowQBE="false" allowSorting="false" label="delivery Comments" length="2000" showInSummary="true" />
+    <field name="ProjectedDateNextContact" type="DateTime" label="projected Date Next Contact" showInSummary="true" />
+    <field name="DateInactivated" type="DateTime" label="date Inactivated" showInSummary="true" />
+    <field name="Email" type="String" label="Email" length="30" showInSummary="true" />
+    <field name="Ranking" type="Int64" label="Ranking" />
+    <field name="FieldRep" type="String" label="Rep" length="4" />
+    <field name="PsSectorRen" type="String" label="ps Sector REN" length="80" />
+    <field name="PsSectorRid" type="Int32" label="ps Sector RID">
+      <items style="Lookup" dataController="Sectors" newDataView="createForm1" dataValueField="ID" dataTextField="Name" />
+    </field>
+    <field name="PsSectorRname" type="String" readOnly="true" label="Sector" length="20" />
+    <field name="PsSectorRma" type="String" label="ps Sector RMA" length="80" />
+    <field name="LastOrder" type="DateTime" label="last Order" />
+    <field name="LastYearSales" type="Double" label="last Year Sales" />
+    <field name="Active" type="String" label="Active" length="1" />
+    <field name="Zip" type="String" label="Zip" length="10" />
+    <field name="DateAdded" type="DateTime" label="date Added" />
+    <field name="Trend" type="Int64" label="Trend" />
+    <field name="Name" type="String" label="Name" length="40" />
+    <field name="DesignComments" type="String" allowQBE="false" allowSorting="false" label="design Comments" length="2000" />
+    <field name="Phone" type="String" label="Phone" length="14" />
+    <field name="Tier" type="String" label="Tier" length="20" />
+    <field name="City" type="String" label="City" length="20" />
+    <field name="DateOfLastContact" type="DateTime" label="date Of Last Contact" />
+    <field name="Add2" type="String" label="Add2" length="80" />
+    <field name="Add1" type="String" label="Add1" length="80" />
+    <field name="State" type="String" label="State" length="2" />
+    <field name="OutsideFieldRep" type="String" label="outside Field Rep" length="3" />
+    <field name="HoldDesign" type="Boolean" label="hold Design" />
+    <field name="ContractorFlag" type="Boolean" label="contractor Flag" />
+    <field name="CustomerContacts" type="DataView" label="Customer Contacts">
+      <dataView controller="CustomerContacts" view="grid1" filterFields="ObCustomerRid" />
+    </field>
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Customers" filter="Active = 'A'" showInSelector="false" tags="view-style-calendar-disabled">
+      <headerText />
+      <dataFields>
+        <dataField fieldName="ID" columns="15" hidden="true" />
+        <dataField fieldName="Name" columns="60" />
+        <dataField fieldName="Add1" columns="20" />
+        <dataField fieldName="Add2" columns="20" />
+        <dataField fieldName="City" columns="20" />
+        <dataField fieldName="State" columns="2" />
+        <dataField fieldName="Phone" columns="20" />
+        <dataField fieldName="Email" columns="30" />
+        <dataField fieldName="Ranking" columns="15" />
+        <dataField fieldName="FieldRep" columns="4" />
+        <dataField fieldName="OutsideFieldRep" columns="3">
+          <headerText>O Rep</headerText>
+        </dataField>
+        <dataField fieldName="PsSectorRid" aliasFieldName="PsSectorRname">
+          <headerText>Sector</headerText>
+        </dataField>
+        <dataField fieldName="Trend" columns="15" />
+        <dataField fieldName="Tier" columns="20" />
+        <dataField fieldName="DateOfLastContact" columns="10" />
+        <dataField fieldName="CustomerContacts" columns="15">
+          <dataView showActionBar="false" />
+        </dataField>
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Customers" tags="modal-max-lg">
+      <headerText />
+      <categories>
+        <category id="c1" headerText="Demographics" flow="NewColumn">
+          <description />
+          <dataFields>
+            <dataField fieldName="ID" columns="15" hidden="true" />
+            <dataField fieldName="Name" columns="40" />
+            <dataField fieldName="Add1" />
+            <dataField fieldName="Add2" />
+            <dataField fieldName="City" columns="20" />
+            <dataField fieldName="State" columns="2" />
+            <dataField fieldName="Zip" columns="10" />
+            <dataField fieldName="DateInactivated" columns="10" />
+            <dataField fieldName="Ranking" columns="15" />
+            <dataField fieldName="FieldRep" columns="4" />
+            <dataField fieldName="OutsideFieldRep" columns="3" />
+            <dataField fieldName="PsSectorRid" aliasFieldName="PsSectorRname" hyperlinkFormatString="~/pages/Sectors?ID={PsSectorRid}&amp;_controller=Sectors&amp;_command=Select&amp;_argument=editForm1" />
+          </dataFields>
+        </category>
+        <category headerText="More Info" id="c2" flow="NewColumn">
+          <dataFields>
+            <dataField fieldName="Phone" columns="14" />
+            <dataField fieldName="Email" columns="30" />
+            <dataField fieldName="DateAdded" columns="10" />
+            <dataField fieldName="LastOrder" columns="10" />
+            <dataField fieldName="DateOfLastContact" columns="10" />
+            <dataField fieldName="ProjectedDateNextContact" columns="10" />
+            <dataField fieldName="LastYearSales" columns="15" />
+            <dataField fieldName="Active" columns="1" />
+            <dataField fieldName="Trend" columns="15" />
+            <dataField fieldName="Tier" columns="20" />
+          </dataFields>
+        </category>
+        <category headerText="Comments" id="c3" tab="Comments" flow="NewRow">
+          <dataFields>
+            <dataField fieldName="DeliveryComments" rows="5" />
+            <dataField fieldName="DesignComments" rows="5" />
+            <dataField fieldName="HoldDesign" />
+            <dataField fieldName="ContractorFlag" />
+          </dataFields>
+        </category>
+        <category tab="Contacts" id="c4">
+          <dataFields>
+            <dataField fieldName="CustomerContacts" columns="15">
+              <dataView showActionBar="false" showDescription="false" />
+            </dataField>
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="New Customers">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="ID" columns="15" />
+            <dataField fieldName="DateFieldRepChanged" columns="10" />
+            <dataField fieldName="DeliveryComments" rows="5" />
+            <dataField fieldName="ProjectedDateNextContact" columns="10" />
+            <dataField fieldName="DateInactivated" columns="10" />
+            <dataField fieldName="Email" columns="30" />
+            <dataField fieldName="Ranking" columns="15" />
+            <dataField fieldName="FieldRep" columns="4" />
+            <dataField fieldName="PsSectorRen" />
+            <dataField fieldName="PsSectorRid" aliasFieldName="PsSectorRname" />
+            <dataField fieldName="PsSectorRma" />
+            <dataField fieldName="LastOrder" columns="10" />
+            <dataField fieldName="LastYearSales" columns="15" />
+            <dataField fieldName="Active" columns="1" />
+            <dataField fieldName="Zip" columns="10" />
+            <dataField fieldName="DateAdded" columns="10" />
+            <dataField fieldName="Trend" columns="15" />
+            <dataField fieldName="Name" columns="40" />
+            <dataField fieldName="DesignComments" rows="5" />
+            <dataField fieldName="Phone" columns="14" />
+            <dataField fieldName="Tier" columns="20" />
+            <dataField fieldName="City" columns="20" />
+            <dataField fieldName="DateOfLastContact" columns="10" />
+            <dataField fieldName="Add2" />
+            <dataField fieldName="Add1" />
+            <dataField fieldName="State" columns="2" />
+            <dataField fieldName="OutsideFieldRep" columns="3" />
+            <dataField fieldName="HoldDesign" />
+            <dataField fieldName="ContractorFlag" />
+            <dataField fieldName="CustomerContacts" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" commandArgument="Save" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" commandArgument="Save" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" commandArgument="SaveAndNew" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenLastCommandArgument="Save" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenClientScript="this.hasDetails()" />
+      <action id="a14" whenLastCommandName="Insert" whenLastCommandArgument="SaveAndNew" commandName="New" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+      <action id="a2" />
+      <action id="a3" commandName="ExportRowset" />
+      <action id="a4" commandName="ExportRss" />
+      <action id="a5" />
+      <action id="a6" commandName="Import" commandArgument="createForm1" />
+      <action id="a7" commandName="DataSheet" />
+      <action id="a8" commandName="Grid" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag9" scope="ActionColumn">
+      <action id="a1" commandName="Edit" commandArgument="editForm1" />
+      <action id="a2" commandName="Delete" />
+    </actionGroup>
+  </actions>
+</dataController>

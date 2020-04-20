@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="Customers" alias="Customers" created="2020-04-15T11:55:11" modified="2020-04-15T11:58:16" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="ps_Sector_R" parentTableSchema="dbo" parentTableName="Sectors" x="434" y="20">
+      <foreignKeyColumn columnName="ps_Sector_RID" parentColumnName="ID" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="ID" fieldName="ID" label="Id" />
+    <column name="dateFieldRepChanged" fieldName="DateFieldRepChanged" label="date Field Rep Changed" />
+    <column name="deliveryComments" fieldName="DeliveryComments" label="delivery Comments" />
+    <column name="projectedDateNextContact" fieldName="ProjectedDateNextContact" label="projected Date Next Contact" />
+    <column name="dateInactivated" fieldName="DateInactivated" label="date Inactivated" />
+    <column name="email" fieldName="Email" label="Email" />
+    <column name="ranking" fieldName="Ranking" label="Ranking" />
+    <column name="fieldRep" fieldName="FieldRep" label="Rep" />
+    <column name="ps_Sector_REN" fieldName="PsSectorRen" label="ps Sector REN" />
+    <column name="ps_Sector_RID" fieldName="PsSectorRid" label="ps Sector RID" aliasColumnName="name" aliasForeignKey="ps_Sector_R" />
+    <column name="name" fieldName="PsSectorRname" label="ps Sector R Name" foreignKey="ps_Sector_R" />
+    <column name="ps_Sector_RMA" fieldName="PsSectorRma" label="ps Sector RMA" />
+    <column name="lastOrder" fieldName="LastOrder" label="last Order" />
+    <column name="lastYearSales" fieldName="LastYearSales" label="last Year Sales" />
+    <column name="active" fieldName="Active" label="Active" />
+    <column name="zip" fieldName="Zip" label="Zip" />
+    <column name="dateAdded" fieldName="DateAdded" label="date Added" />
+    <column name="trend" fieldName="Trend" label="Trend" />
+    <column name="name" fieldName="Name" label="Name" />
+    <column name="designComments" fieldName="DesignComments" label="design Comments" />
+    <column name="phone" fieldName="Phone" label="Phone" />
+    <column name="tier" fieldName="Tier" label="Tier" />
+    <column name="city" fieldName="City" label="City" />
+    <column name="dateOfLastContact" fieldName="DateOfLastContact" label="date Of Last Contact" />
+    <column name="add2" fieldName="Add2" label="Add2" />
+    <column name="add1" fieldName="Add1" label="Add1" />
+    <column name="state" fieldName="State" label="State" />
+    <column name="outsideFieldRep" fieldName="OutsideFieldRep" label="outside Field Rep" />
+    <column name="holdDesign" fieldName="HoldDesign" label="hold Design" />
+    <column name="contractorFlag" fieldName="ContractorFlag" label="contractor Flag" />
+  </columns>
+</dataModel>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="CustomerContacts" alias="CustomerContacts" created="2020-04-20T12:21:58" modified="2020-04-20T12:22:43" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="ob_Customer_R" parentTableSchema="dbo" parentTableName="Customers" x="344" y="20">
+      <foreignKeyColumn columnName="ob_Customer_RID" parentColumnName="ID" />
+    </foreignKey>
+    <foreignKey id="ob_Customer_Rps_Sector_R" parentTableSchema="dbo" parentTableName="Sectors" baseForeignKey="ob_Customer_R" x="662" y="20">
+      <foreignKeyColumn columnName="ps_Sector_RID" parentColumnName="ID" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="ID" fieldName="ID" label="Id" />
+    <column name="BASVERSION" fieldName="Basversion" label="Basversion" />
+    <column name="BASTIMESTAMP" fieldName="Bastimestamp" label="Bastimestamp" />
+    <column name="firstName" fieldName="FirstName" label="first Name" />
+    <column name="isPA" fieldName="IsPa" label="is PA" />
+    <column name="anniversary" fieldName="Anniversary" label="Anniversary" />
+    <column name="ext" fieldName="Ext" label="Ext" />
+    <column name="comments" fieldName="Comments" label="Comments" />
+    <column name="homePhone" fieldName="HomePhone" label="home Phone" />
+    <column name="likes" fieldName="Likes" label="Likes" />
+    <column name="empHist" fieldName="EmpHist" label="emp Hist" />
+    <column name="dateInactivated" fieldName="DateInactivated" label="date Inactivated" />
+    <column name="workPhone" fieldName="WorkPhone" label="work Phone" />
+    <column name="ob_Customer_REN" fieldName="ObCustomerRen" label="ob Customer REN" />
+    <column name="ob_Customer_RID" fieldName="ObCustomerRid" label="ob Customer RID" aliasColumnName="name" aliasForeignKey="ob_Customer_R" />
+    <column name="name" fieldName="obCustomerRName" label="ob Customer R Name" foreignKey="ob_Customer_R" />
+    <column name="name" fieldName="ObCustomerRpsSectorRname" label="ob Customer Rps Sector R Name" foreignKey="ob_Customer_Rps_Sector_R" />
+    <column name="ob_Customer_RMA" fieldName="ObCustomerRma" label="ob Customer RMA" />
+    <column name="birthday" fieldName="Birthday" label="Birthday" />
+    <column name="salutation" fieldName="Salutation" label="Salutation" />
+    <column name="dateAdded" fieldName="DateAdded" label="date Added" />
+    <column name="roles" fieldName="Roles" label="Roles" />
+    <column name="lastName" fieldName="LastName" label="last Name" />
+    <column name="familarName" fieldName="FamilarName" label="familar Name" />
+    <column name="rolesForDisplay" fieldName="RolesForDisplay" label="roles For Display" />
+    <column name="email" fieldName="Email" label="Email" />
+    <column name="dateLastChange" fieldName="DateLastChange" label="date Last Change" />
+    <column name="family" fieldName="Family" label="Family" />
+    <column name="mobilePhone" fieldName="MobilePhone" label="mobile Phone" />
+    <column name="title" fieldName="Title" label="Title" />
+    <column name="name" fieldName="Name" label="Name" />
+  </columns>
+</dataModel>

@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="Orders" conflictDetection="overwriteChanges" label="Orders" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"Orders"."ID" "ID"
+	,"Orders"."BASVERSION" "Basversion"
+	,"Orders"."BASTIMESTAMP" "Bastimestamp"
+	,"Orders"."daysUntilDeadline" "DaysUntilDeadline"
+	,"Orders"."dateCode" "DateCode"
+	,"Orders"."dropShipFlag" "DropShipFlag"
+	,"Orders"."DOLChange" "Dolchange"
+	,"Orders"."totalBMEs" "TotalBmes"
+	,"Orders"."FOB" "Fob"
+	,"Orders"."creditNumber" "CreditNumber"
+	,"Orders"."profit" "Profit"
+	,"Orders"."terms" "Terms"
+	,"Orders"."totalSale" "TotalSale"
+	,"Orders"."noShippableLines" "NoShippableLines"
+	,"Orders"."noLines" "NoLines"
+	,"Orders"."PONumber" "Ponumber"
+	,"Orders"."fieldRep" "FieldRep"
+	,"Orders"."dropShipAddress" "DropShipAddress"
+	,"Orders"."tripNumber" "TripNumber"
+	,"Orders"."ps_userID_REN" "PsUseridRen"
+	,"Orders"."ps_userID_RID" "PsUseridRid"
+	,"Orders"."ps_userID_RMA" "PsUseridRma"
+	,"Orders"."shipVia" "ShipVia"
+	,"Orders"."orderNumber" "OrderNumber"
+	,"Orders"."dateEntered" "DateEntered"
+	,"Orders"."dating" "Dating"
+	,"Orders"."dateShipped" "DateShipped"
+	,"Orders"."ob_Customers_REN" "ObCustomersRen"
+	,"Orders"."ob_Customers_RID" "ObCustomersRid"
+	,"ob_Customers_R"."name" "obCustomersRName"
+	,"ob_Customers_R"."city" "obCustomersRCity"
+	,"Orders"."ob_Customers_RMA" "ObCustomersRma"
+	,"Orders"."contact" "Contact"
+	,"Orders"."totalCost" "TotalCost"
+	,"Orders"."daysUntilTrip" "DaysUntilTrip"
+	,"Orders"."estDeliveryDate" "EstDeliveryDate"
+	,"Orders"."deadline" "Deadline"
+	,"Orders"."pickup" "Pickup"
+	,"Orders"."ob_BillTo_REN" "ObBilltoRen"
+	,"Orders"."ob_BillTo_RID" "ObBilltoRid"
+	,"Orders"."ob_BillTo_RMA" "ObBilltoRma"
+	,"Orders"."deferred" "Deferred"
+	,"Orders"."specialStatus" "SpecialStatus"
+	,"Orders"."ps_DeliveryLocationUNUSED_REN" "PsDeliverylocationunusedRen"
+	,"Orders"."ps_DeliveryLocationUNUSED_RID" "PsDeliverylocationunusedRid"
+	,"Orders"."ps_DeliveryLocationUNUSED_RMA" "PsDeliverylocationunusedRma"
+	,"Orders"."contractorFlag" "ContractorFlag"
+	,"Orders"."BMEsperFT3" "BmesperFt3"
+	,"Orders"."BMEsperLB" "BmesperLb"
+	,"Orders"."codFlag" "CodFlag"
+	,"Orders"."approvalCode" "ApprovalCode"
+	,"Orders"."orderNumberAsString" "OrderNumberAsString"
+	,"Orders"."sendEmailFlag" "SendEmailFlag"
+	,"Orders"."emailReturnStatus" "EmailReturnStatus"
+	,"Orders"."invoicePrinted" "InvoicePrinted"
+	,"Orders"."invoiceSequenceNumber" "InvoiceSequenceNumber"
+	,"Orders"."dateInvoicePrinted" "DateInvoicePrinted"
+	,"Orders"."holdShipments" "HoldShipments"
+	,"Orders"."holdDesign" "HoldDesign"
+	,"Orders"."noLinesWP" "NoLinesWp"
+	,"Orders"."datingDays" "DatingDays"
+	,"Orders"."dateInvoiced" "DateInvoiced"
+	,"Orders"."contractorCompleted" "ContractorCompleted"
+	,"Orders"."originalShipTo_REN" "OriginalshiptoRen"
+	,"Orders"."originalShipTo_RID" "OriginalshiptoRid"
+	,"Orders"."originalShipTo_RMA" "OriginalshiptoRma"
+	,"Orders"."wpPostedToLinesString" "WpPostedToLinesString"
+	,"Orders"."tripDate" "TripDate"
+	,"Orders"."PODSigned" "Podsigned"
+	,"Orders"."orderTotal" "OrderTotal"
+	,"Orders"."salesTax" "SalesTax"
+	,"Orders"."ps_AltDeliveryLocation_REN" "PsAltdeliverylocationRen"
+	,"Orders"."ps_AltDeliveryLocation_RID" "PsAltdeliverylocationRid"
+	,"Orders"."ps_AltDeliveryLocation_RMA" "PsAltdeliverylocationRma"
+	,"Orders"."keyboarder_REN" "KeyboarderRen"
+	,"Orders"."keyboarder_RID" "KeyboarderRid"
+	,"Orders"."keyboarder_RMA" "KeyboarderRma"
+	,"Orders"."toRest" "ToRest"
+	,"Orders"."fromRest" "FromRest"
+from "dbo"."Orders" "Orders"
+	left join "dbo"."Customers" "ob_Customers_R" on "Orders"."ob_Customers_RID" = "ob_Customers_R"."ID"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="ID" type="Int32" allowNulls="false" isPrimaryKey="true" label="Id" />
+    <field name="Basversion" type="Int32" label="Basversion" showInSummary="true" />
+    <field name="Bastimestamp" type="DateTime" label="Bastimestamp" showInSummary="true" />
+    <field name="DaysUntilDeadline" type="Int64" label="days Until Deadline" showInSummary="true" />
+    <field name="DateCode" type="String" label="date Code" length="20" showInSummary="true" />
+    <field name="DropShipFlag" type="Boolean" label="drop Ship Flag" showInSummary="true" />
+    <field name="Dolchange" type="DateTime" label="Last Chg" />
+    <field name="TotalBmes" type="Double" label="tot BMEs" />
+    <field name="Fob" type="String" label="Fob" length="20" />
+    <field name="CreditNumber" type="String" label="credit Number" length="20" />
+    <field name="Profit" type="Double" label="Profit" />
+    <field name="Terms" type="String" label="Terms" length="20" />
+    <field name="TotalSale" type="Decimal" label="total Sale" />
+    <field name="NoShippableLines" type="Int64" label="no Shippable Lines" />
+    <field name="NoLines" type="Int64" label="no Lines" />
+    <field name="Ponumber" type="String" label="PO Number" length="20" />
+    <field name="FieldRep" type="String" label="Rep" length="3" />
+    <field name="DropShipAddress" type="String" allowQBE="false" allowSorting="false" label="drop Ship Address" length="2000" />
+    <field name="TripNumber" type="Int64" label="Trip No" />
+    <field name="PsUseridRen" type="String" label="psuser IDREN" length="80" />
+    <field name="PsUseridRid" type="Int64" label="psuser IDRID" />
+    <field name="PsUseridRma" type="String" label="psuser IDRMA" length="80" />
+    <field name="ShipVia" type="String" label="ship Via" length="20" />
+    <field name="OrderNumber" type="Int64" label="order Number" />
+    <field name="DateEntered" type="DateTime" label="Entered" />
+    <field name="Dating" type="DateTime" label="Dating" />
+    <field name="DateShipped" type="DateTime" label="Shipped" />
+    <field name="ObCustomersRen" type="String" label="ob Customers REN" length="80" />
+    <field name="ObCustomersRid" type="Int32" label="ob Customers RID">
+      <items style="Lookup" dataController="Customers" newDataView="createForm1" dataValueField="ID" dataTextField="PsSectorRname" copy="obCustomersRCity=City" />
+    </field>
+    <field name="obCustomersRName" type="String" readOnly="true" label="Ship To" length="40" />
+    <field name="obCustomersRCity" type="String" readOnly="true" label="Ship To City" length="20" />
+    <field name="ObCustomersRma" type="String" label="ob Customers RMA" length="80" />
+    <field name="Contact" type="String" label="Contact" length="90" />
+    <field name="TotalCost" type="Decimal" dataFormatString="c" label="total Cost" />
+    <field name="DaysUntilTrip" type="Int64" label="days Until Trip" />
+    <field name="EstDeliveryDate" type="DateTime" label="Est. Del." />
+    <field name="Deadline" type="DateTime" label="Deadline" />
+    <field name="Pickup" type="Boolean" label="Pickup" />
+    <field name="ObBilltoRen" type="String" label="ob Bill To REN" length="80" />
+    <field name="ObBilltoRid" type="Int64" label="ob Bill To RID" />
+    <field name="ObBilltoRma" type="String" label="ob Bill To RMA" length="80" />
+    <field name="Deferred" type="DateTime" label="Deferred" />
+    <field name="SpecialStatus" type="String" label="special Status" length="30" />
+    <field name="PsDeliverylocationunusedRen" type="String" label="ps Delivery Location UNUSEDREN" length="80" />
+    <field name="PsDeliverylocationunusedRid" type="Int64" label="ps Delivery Location UNUSEDRID" />
+    <field name="PsDeliverylocationunusedRma" type="String" label="ps Delivery Location UNUSEDRMA" length="80" />
+    <field name="ContractorFlag" type="Boolean" label="contractor Flag" />
+    <field name="BmesperFt3" type="Double" label="BM Esper FT3" />
+    <field name="BmesperLb" type="Double" label="BM Esper LB" />
+    <field name="CodFlag" type="Boolean" label="cod Flag" />
+    <field name="ApprovalCode" type="String" label="approval Code" length="20" />
+    <field name="OrderNumberAsString" type="String" label="order Number As String" length="40" />
+    <field name="SendEmailFlag" type="String" label="send Email Flag" length="20" />
+    <field name="EmailReturnStatus" type="String" label="email Return Status" length="200" />
+    <field name="InvoicePrinted" type="Boolean" label="invoice Printed" />
+    <field name="InvoiceSequenceNumber" type="String" label="invoice Sequence Number" length="20" />
+    <field name="DateInvoicePrinted" type="DateTime" label="date Invoice Printed" />
+    <field name="HoldShipments" type="Boolean" label="hold Shipments" />
+    <field name="HoldDesign" type="Boolean" label="hold Design" />
+    <field name="NoLinesWp" type="Int64" label="no Lines WP" />
+    <field name="DatingDays" type="Int64" label="dating Days" />
+    <field name="DateInvoiced" type="DateTime" label="date Invoiced" />
+    <field name="ContractorCompleted" type="Boolean" label="contractor Completed" />
+    <field name="OriginalshiptoRen" type="String" label="original Ship To REN" length="80" />
+    <field name="OriginalshiptoRid" type="Int64" label="original Ship To RID" />
+    <field name="OriginalshiptoRma" type="String" label="original Ship To RMA" length="80" />
+    <field name="WpPostedToLinesString" type="String" label="wp Posted To Lines String" length="20" />
+    <field name="TripDate" type="DateTime" label="trip Date" />
+    <field name="Podsigned" type="Boolean" label="POD Signed" />
+    <field name="OrderTotal" type="Decimal" label="order Total" />
+    <field name="SalesTax" type="Decimal" label="sales Tax" />
+    <field name="PsAltdeliverylocationRen" type="String" label="ps Alt Delivery Location REN" length="80" />
+    <field name="PsAltdeliverylocationRid" type="Int64" label="ps Alt Delivery Location RID" />
+    <field name="PsAltdeliverylocationRma" type="String" label="ps Alt Delivery Location RMA" length="80" />
+    <field name="KeyboarderRen" type="String" label="keyboarder REN" length="80" />
+    <field name="KeyboarderRid" type="Int64" label="keyboarder RID" />
+    <field name="KeyboarderRma" type="String" label="keyboarder RMA" length="80" />
+    <field name="ToRest" type="String" allowQBE="false" allowSorting="false" label="to Rest" length="2000" />
+    <field name="FromRest" type="String" allowQBE="false" allowSorting="false" label="from Rest" length="2000" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Orders">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="ID" columns="15" />
+        <dataField fieldName="Basversion" columns="15" />
+        <dataField fieldName="Bastimestamp" columns="10" />
+        <dataField fieldName="DaysUntilDeadline" columns="15" />
+        <dataField fieldName="DateCode" columns="20" />
+        <dataField fieldName="DropShipFlag" />
+        <dataField fieldName="Dolchange" columns="10" />
+        <dataField fieldName="TotalBmes" columns="15" />
+        <dataField fieldName="Fob" columns="20" />
+        <dataField fieldName="CreditNumber" columns="20" />
+        <dataField fieldName="Profit" columns="15" />
+        <dataField fieldName="Terms" columns="20" />
+        <dataField fieldName="TotalSale" columns="15" />
+        <dataField fieldName="NoShippableLines" columns="15" />
+        <dataField fieldName="NoLines" columns="15" />
+        <dataField fieldName="Ponumber" columns="20" />
+        <dataField fieldName="FieldRep" columns="3" />
+        <dataField fieldName="DropShipAddress" rows="5" />
+        <dataField fieldName="TripNumber" columns="15" />
+        <dataField fieldName="PsUseridRen" />
+        <dataField fieldName="PsUseridRid" columns="15" />
+        <dataField fieldName="PsUseridRma" />
+        <dataField fieldName="ShipVia" columns="20" />
+        <dataField fieldName="OrderNumber" columns="15" />
+        <dataField fieldName="DateEntered" columns="10" />
+        <dataField fieldName="Dating" columns="10" />
+        <dataField fieldName="DateShipped" columns="10" />
+        <dataField fieldName="ObCustomersRen" />
+        <dataField fieldName="ObCustomersRid" aliasFieldName="obCustomersRName" hyperlinkFormatString="~/pages/Customers?ID={ObCustomersRid}&amp;_controller=Customers&amp;_command=Select&amp;_argument=editForm1" />
+        <dataField fieldName="obCustomersRCity" columns="20" />
+        <dataField fieldName="ObCustomersRma" />
+        <dataField fieldName="Contact" />
+        <dataField fieldName="TotalCost" columns="15" />
+        <dataField fieldName="DaysUntilTrip" columns="15" />
+        <dataField fieldName="EstDeliveryDate" columns="10" />
+        <dataField fieldName="Deadline" columns="10" />
+        <dataField fieldName="Pickup" />
+        <dataField fieldName="ObBilltoRen" />
+        <dataField fieldName="ObBilltoRid" columns="15" />
+        <dataField fieldName="ObBilltoRma" />
+        <dataField fieldName="Deferred" columns="10" />
+        <dataField fieldName="SpecialStatus" columns="30" />
+        <dataField fieldName="PsDeliverylocationunusedRen" />
+        <dataField fieldName="PsDeliverylocationunusedRid" columns="15" />
+        <dataField fieldName="PsDeliverylocationunusedRma" />
+        <dataField fieldName="ContractorFlag" />
+        <dataField fieldName="BmesperFt3" columns="15" />
+        <dataField fieldName="BmesperLb" columns="15" />
+        <dataField fieldName="CodFlag" />
+        <dataField fieldName="ApprovalCode" columns="20" />
+        <dataField fieldName="OrderNumberAsString" columns="40" />
+        <dataField fieldName="SendEmailFlag" columns="20" />
+        <dataField fieldName="EmailReturnStatus" />
+        <dataField fieldName="InvoicePrinted" />
+        <dataField fieldName="InvoiceSequenceNumber" columns="20" />
+        <dataField fieldName="DateInvoicePrinted" columns="10" />
+        <dataField fieldName="HoldShipments" />
+        <dataField fieldName="HoldDesign" />
+        <dataField fieldName="NoLinesWp" columns="15" />
+        <dataField fieldName="DatingDays" columns="15" />
+        <dataField fieldName="DateInvoiced" columns="10" />
+        <dataField fieldName="ContractorCompleted" />
+        <dataField fieldName="OriginalshiptoRen" />
+        <dataField fieldName="OriginalshiptoRid" columns="15" />
+        <dataField fieldName="OriginalshiptoRma" />
+        <dataField fieldName="WpPostedToLinesString" columns="20" />
+        <dataField fieldName="TripDate" columns="10" />
+        <dataField fieldName="Podsigned" />
+        <dataField fieldName="OrderTotal" columns="15" />
+        <dataField fieldName="SalesTax" columns="15" />
+        <dataField fieldName="PsAltdeliverylocationRen" />
+        <dataField fieldName="PsAltdeliverylocationRid" columns="15" />
+        <dataField fieldName="PsAltdeliverylocationRma" />
+        <dataField fieldName="KeyboarderRen" />
+        <dataField fieldName="KeyboarderRid" columns="15" />
+        <dataField fieldName="KeyboarderRma" />
+        <dataField fieldName="ToRest" rows="5" />
+        <dataField fieldName="FromRest" rows="5" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Orders">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Orders" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="ID" columns="15" />
+            <dataField fieldName="Basversion" columns="15" />
+            <dataField fieldName="Bastimestamp" columns="10" />
+            <dataField fieldName="DaysUntilDeadline" columns="15" />
+            <dataField fieldName="DateCode" columns="20" />
+            <dataField fieldName="DropShipFlag" />
+            <dataField fieldName="Dolchange" columns="10" />
+            <dataField fieldName="TotalBmes" columns="15" />
+            <dataField fieldName="Fob" columns="20" />
+            <dataField fieldName="CreditNumber" columns="20" />
+            <dataField fieldName="Profit" columns="15" />
+            <dataField fieldName="Terms" columns="20" />
+            <dataField fieldName="TotalSale" columns="15" />
+            <dataField fieldName="NoShippableLines" columns="15" />
+            <dataField fieldName="NoLines" columns="15" />
+            <dataField fieldName="Ponumber" columns="20" />
+            <dataField fieldName="FieldRep" columns="3" />
+            <dataField fieldName="DropShipAddress" rows="5" />
+            <dataField fieldName="TripNumber" columns="15" />
+            <dataField fieldName="PsUseridRen" />
+            <dataField fieldName="PsUseridRid" columns="15" />
+            <dataField fieldName="PsUseridRma" />
+            <dataField fieldName="ShipVia" columns="20" />
+            <dataField fieldName="OrderNumber" columns="15" />
+            <dataField fieldName="DateEntered" columns="10" />
+            <dataField fieldName="Dating" columns="10" />
+            <dataField fieldName="DateShipped" columns="10" />
+            <dataField fieldName="ObCustomersRen" />
+            <dataField fieldName="ObCustomersRid" aliasFieldName="obCustomersRName" hyperlinkFormatString="~/pages/Customers?ID={ObCustomersRid}&amp;_controller=Customers&amp;_command=Select&amp;_argument=editForm1" />
+            <dataField fieldName="obCustomersRCity" columns="20" />
+            <dataField fieldName="ObCustomersRma" />
+            <dataField fieldName="Contact" />
+            <dataField fieldName="TotalCost" columns="15" />
+            <dataField fieldName="DaysUntilTrip" columns="15" />
+            <dataField fieldName="EstDeliveryDate" columns="10" />
+            <dataField fieldName="Deadline" columns="10" />
+            <dataField fieldName="Pickup" />
+            <dataField fieldName="ObBilltoRen" />
+            <dataField fieldName="ObBilltoRid" columns="15" />
+            <dataField fieldName="ObBilltoRma" />
+            <dataField fieldName="Deferred" columns="10" />
+            <dataField fieldName="SpecialStatus" columns="30" />
+            <dataField fieldName="PsDeliverylocationunusedRen" />
+            <dataField fieldName="PsDeliverylocationunusedRid" columns="15" />
+            <dataField fieldName="PsDeliverylocationunusedRma" />
+            <dataField fieldName="ContractorFlag" />
+            <dataField fieldName="BmesperFt3" columns="15" />
+            <dataField fieldName="BmesperLb" columns="15" />
+            <dataField fieldName="CodFlag" />
+            <dataField fieldName="ApprovalCode" columns="20" />
+            <dataField fieldName="OrderNumberAsString" columns="40" />
+            <dataField fieldName="SendEmailFlag" columns="20" />
+            <dataField fieldName="EmailReturnStatus" />
+            <dataField fieldName="InvoicePrinted" />
+            <dataField fieldName="InvoiceSequenceNumber" columns="20" />
+            <dataField fieldName="DateInvoicePrinted" columns="10" />
+            <dataField fieldName="HoldShipments" />
+            <dataField fieldName="HoldDesign" />
+            <dataField fieldName="NoLinesWp" columns="15" />
+            <dataField fieldName="DatingDays" columns="15" />
+            <dataField fieldName="DateInvoiced" columns="10" />
+            <dataField fieldName="ContractorCompleted" />
+            <dataField fieldName="OriginalshiptoRen" />
+            <dataField fieldName="OriginalshiptoRid" columns="15" />
+            <dataField fieldName="OriginalshiptoRma" />
+            <dataField fieldName="WpPostedToLinesString" columns="20" />
+            <dataField fieldName="TripDate" columns="10" />
+            <dataField fieldName="Podsigned" />
+            <dataField fieldName="OrderTotal" columns="15" />
+            <dataField fieldName="SalesTax" columns="15" />
+            <dataField fieldName="PsAltdeliverylocationRen" />
+            <dataField fieldName="PsAltdeliverylocationRid" columns="15" />
+            <dataField fieldName="PsAltdeliverylocationRma" />
+            <dataField fieldName="KeyboarderRen" />
+            <dataField fieldName="KeyboarderRid" columns="15" />
+            <dataField fieldName="KeyboarderRma" />
+            <dataField fieldName="ToRest" rows="5" />
+            <dataField fieldName="FromRest" rows="5" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="New Orders">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="ID" columns="15" />
+            <dataField fieldName="Basversion" columns="15" />
+            <dataField fieldName="Bastimestamp" columns="10" />
+            <dataField fieldName="DaysUntilDeadline" columns="15" />
+            <dataField fieldName="DateCode" columns="20" />
+            <dataField fieldName="DropShipFlag" />
+            <dataField fieldName="Dolchange" columns="10" />
+            <dataField fieldName="TotalBmes" columns="15" />
+            <dataField fieldName="Fob" columns="20" />
+            <dataField fieldName="CreditNumber" columns="20" />
+            <dataField fieldName="Profit" columns="15" />
+            <dataField fieldName="Terms" columns="20" />
+            <dataField fieldName="TotalSale" columns="15" />
+            <dataField fieldName="NoShippableLines" columns="15" />
+            <dataField fieldName="NoLines" columns="15" />
+            <dataField fieldName="Ponumber" columns="20" />
+            <dataField fieldName="FieldRep" columns="3" />
+            <dataField fieldName="DropShipAddress" rows="5" />
+            <dataField fieldName="TripNumber" columns="15" />
+            <dataField fieldName="PsUseridRen" />
+            <dataField fieldName="PsUseridRid" columns="15" />
+            <dataField fieldName="PsUseridRma" />
+            <dataField fieldName="ShipVia" columns="20" />
+            <dataField fieldName="OrderNumber" columns="15" />
+            <dataField fieldName="DateEntered" columns="10" />
+            <dataField fieldName="Dating" columns="10" />
+            <dataField fieldName="DateShipped" columns="10" />
+            <dataField fieldName="ObCustomersRen" />
+            <dataField fieldName="ObCustomersRid" aliasFieldName="obCustomersRName" />
+            <dataField fieldName="obCustomersRCity" columns="20" />
+            <dataField fieldName="ObCustomersRma" />
+            <dataField fieldName="Contact" />
+            <dataField fieldName="TotalCost" columns="15" />
+            <dataField fieldName="DaysUntilTrip" columns="15" />
+            <dataField fieldName="EstDeliveryDate" columns="10" />
+            <dataField fieldName="Deadline" columns="10" />
+            <dataField fieldName="Pickup" />
+            <dataField fieldName="ObBilltoRen" />
+            <dataField fieldName="ObBilltoRid" columns="15" />
+            <dataField fieldName="ObBilltoRma" />
+            <dataField fieldName="Deferred" columns="10" />
+            <dataField fieldName="SpecialStatus" columns="30" />
+            <dataField fieldName="PsDeliverylocationunusedRen" />
+            <dataField fieldName="PsDeliverylocationunusedRid" columns="15" />
+            <dataField fieldName="PsDeliverylocationunusedRma" />
+            <dataField fieldName="ContractorFlag" />
+            <dataField fieldName="BmesperFt3" columns="15" />
+            <dataField fieldName="BmesperLb" columns="15" />
+            <dataField fieldName="CodFlag" />
+            <dataField fieldName="ApprovalCode" columns="20" />
+            <dataField fieldName="OrderNumberAsString" columns="40" />
+            <dataField fieldName="SendEmailFlag" columns="20" />
+            <dataField fieldName="EmailReturnStatus" />
+            <dataField fieldName="InvoicePrinted" />
+            <dataField fieldName="InvoiceSequenceNumber" columns="20" />
+            <dataField fieldName="DateInvoicePrinted" columns="10" />
+            <dataField fieldName="HoldShipments" />
+            <dataField fieldName="HoldDesign" />
+            <dataField fieldName="NoLinesWp" columns="15" />
+            <dataField fieldName="DatingDays" columns="15" />
+            <dataField fieldName="DateInvoiced" columns="10" />
+            <dataField fieldName="ContractorCompleted" />
+            <dataField fieldName="OriginalshiptoRen" />
+            <dataField fieldName="OriginalshiptoRid" columns="15" />
+            <dataField fieldName="OriginalshiptoRma" />
+            <dataField fieldName="WpPostedToLinesString" columns="20" />
+            <dataField fieldName="TripDate" columns="10" />
+            <dataField fieldName="Podsigned" />
+            <dataField fieldName="OrderTotal" columns="15" />
+            <dataField fieldName="SalesTax" columns="15" />
+            <dataField fieldName="PsAltdeliverylocationRen" />
+            <dataField fieldName="PsAltdeliverylocationRid" columns="15" />
+            <dataField fieldName="PsAltdeliverylocationRma" />
+            <dataField fieldName="KeyboarderRen" />
+            <dataField fieldName="KeyboarderRid" columns="15" />
+            <dataField fieldName="KeyboarderRma" />
+            <dataField fieldName="ToRest" rows="5" />
+            <dataField fieldName="FromRest" rows="5" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" commandArgument="Save" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" commandArgument="Save" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" commandArgument="SaveAndNew" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenLastCommandArgument="Save" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenClientScript="this.hasDetails()" />
+      <action id="a14" whenLastCommandName="Insert" whenLastCommandArgument="SaveAndNew" commandName="New" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+      <action id="a2" />
+      <action id="a3" commandName="ExportRowset" />
+      <action id="a4" commandName="ExportRss" />
+      <action id="a5" />
+      <action id="a6" commandName="Import" commandArgument="createForm1" />
+      <action id="a7" commandName="DataSheet" />
+      <action id="a8" commandName="Grid" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag9" scope="ActionColumn">
+      <action id="a1" commandName="Edit" commandArgument="editForm1" />
+      <action id="a2" commandName="Delete" />
+    </actionGroup>
+  </actions>
+</dataController>

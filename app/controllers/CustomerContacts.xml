@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="CustomerContacts" conflictDetection="overwriteChanges" label="Customer Contacts" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"CustomerContacts"."ID" "ID"
+	,"CustomerContacts"."BASVERSION" "Basversion"
+	,"CustomerContacts"."BASTIMESTAMP" "Bastimestamp"
+	,"CustomerContacts"."firstName" "FirstName"
+	,"CustomerContacts"."isPA" "IsPa"
+	,"CustomerContacts"."anniversary" "Anniversary"
+	,"CustomerContacts"."ext" "Ext"
+	,"CustomerContacts"."comments" "Comments"
+	,"CustomerContacts"."homePhone" "HomePhone"
+	,"CustomerContacts"."likes" "Likes"
+	,"CustomerContacts"."empHist" "EmpHist"
+	,"CustomerContacts"."dateInactivated" "DateInactivated"
+	,"CustomerContacts"."workPhone" "WorkPhone"
+	,"CustomerContacts"."ob_Customer_REN" "ObCustomerRen"
+	,"CustomerContacts"."ob_Customer_RID" "ObCustomerRid"
+	,"ob_Customer_R"."name" "obCustomerRName"
+	,"ob_Customer_Rps_Sector_R"."name" "ObCustomerRpsSectorRname"
+	,"CustomerContacts"."ob_Customer_RMA" "ObCustomerRma"
+	,"CustomerContacts"."birthday" "Birthday"
+	,"CustomerContacts"."salutation" "Salutation"
+	,"CustomerContacts"."dateAdded" "DateAdded"
+	,"CustomerContacts"."roles" "Roles"
+	,"CustomerContacts"."lastName" "LastName"
+	,"CustomerContacts"."familarName" "FamilarName"
+	,"CustomerContacts"."rolesForDisplay" "RolesForDisplay"
+	,"CustomerContacts"."email" "Email"
+	,"CustomerContacts"."dateLastChange" "DateLastChange"
+	,"CustomerContacts"."family" "Family"
+	,"CustomerContacts"."mobilePhone" "MobilePhone"
+	,"CustomerContacts"."title" "Title"
+	,"CustomerContacts"."name" "Name"
+from "dbo"."CustomerContacts" "CustomerContacts"
+	left join "dbo"."Customers" "ob_Customer_R" on "CustomerContacts"."ob_Customer_RID" = "ob_Customer_R"."ID"
+	left join "dbo"."Sectors" "ob_Customer_Rps_Sector_R" on "ob_Customer_R"."ps_Sector_RID" = "ob_Customer_Rps_Sector_R"."ID"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="ID" type="Int32" allowNulls="false" isPrimaryKey="true" label="Id" />
+    <field name="Basversion" type="Int32" label="Basversion" showInSummary="true" />
+    <field name="Bastimestamp" type="DateTime" label="Bastimestamp" showInSummary="true" />
+    <field name="FirstName" type="String" label="first Name" length="30" showInSummary="true" />
+    <field name="IsPa" type="Boolean" label="is PA" showInSummary="true" />
+    <field name="Anniversary" type="DateTime" label="Anniversary" showInSummary="true" />
+    <field name="Ext" type="String" label="Ext" length="4" />
+    <field name="Comments" type="String" label="Comments" length="255" />
+    <field name="HomePhone" type="String" label="home Phone" length="14" />
+    <field name="Likes" type="String" label="Likes" length="255" />
+    <field name="EmpHist" type="String" label="emp Hist" length="255" />
+    <field name="DateInactivated" type="DateTime" label="date Inactivated" />
+    <field name="WorkPhone" type="String" label="work Phone" length="14" />
+    <field name="ObCustomerRen" type="String" label="ob Customer REN" length="80" />
+    <field name="ObCustomerRid" type="Int32" label="ob Customer RID">
+      <items style="Lookup" dataController="Customers" newDataView="createForm1" dataValueField="ID" dataTextField="PsSectorRname" copy="ObCustomerRpsSectorRname=PsSectorRname" />
+    </field>
+    <field name="obCustomerRName" type="String" readOnly="true" label="Customer" length="40" />
+    <field name="ObCustomerRpsSectorRname" type="String" readOnly="true" label="ob Customer Rps Sector R Name" length="20" />
+    <field name="ObCustomerRma" type="String" label="ob Customer RMA" length="80" />
+    <field name="Birthday" type="DateTime" label="Birthday" />
+    <field name="Salutation" type="String" label="Salutation" length="5" />
+    <field name="DateAdded" type="DateTime" label="date Added" />
+    <field name="Roles" type="String" label="Roles" length="200" />
+    <field name="LastName" type="String" label="last Name" length="30" />
+    <field name="FamilarName" type="String" label="familar Name" length="30" />
+    <field name="RolesForDisplay" type="String" label="roles For Display" length="200" />
+    <field name="Email" type="String" label="Email" length="300" />
+    <field name="DateLastChange" type="DateTime" label="date Last Change" />
+    <field name="Family" type="String" label="Family" length="255" />
+    <field name="MobilePhone" type="String" label="mobile Phone" length="14" />
+    <field name="Title" type="String" label="Title" length="30" />
+    <field name="Name" type="String" label="Name" length="40" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Customer Contacts">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="ID" columns="15" hidden="true" />
+        <dataField fieldName="FirstName" columns="30" />
+        <dataField fieldName="LastName" columns="30" />
+        <dataField fieldName="WorkPhone" columns="14" />
+        <dataField fieldName="ObCustomerRid" aliasFieldName="obCustomerRName" hyperlinkFormatString="~/pages/Customers?ID={ObCustomerRid}&amp;_controller=Customers&amp;_command=Select&amp;_argument=editForm1" toolTip="Click to View the Customer Details">
+          <headerText>Customer</headerText>
+        </dataField>
+        <dataField fieldName="Email" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Customer Contacts">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Customer Contacts" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="ID" columns="15" />
+            <dataField fieldName="Basversion" columns="15" />
+            <dataField fieldName="Bastimestamp" columns="10" />
+            <dataField fieldName="FirstName" columns="30" />
+            <dataField fieldName="IsPa" />
+            <dataField fieldName="Anniversary" columns="10" />
+            <dataField fieldName="Ext" columns="4" />
+            <dataField fieldName="Comments" />
+            <dataField fieldName="HomePhone" columns="14" />
+            <dataField fieldName="Likes" />
+            <dataField fieldName="EmpHist" />
+            <dataField fieldName="DateInactivated" columns="10" />
+            <dataField fieldName="WorkPhone" columns="14" />
+            <dataField fieldName="ObCustomerRen" />
+            <dataField fieldName="ObCustomerRid" aliasFieldName="obCustomerRName" hyperlinkFormatString="~/pages/Customers?ID={ObCustomerRid}&amp;_controller=Customers&amp;_command=Select&amp;_argument=editForm1" />
+            <dataField fieldName="ObCustomerRpsSectorRname" columns="20" />
+            <dataField fieldName="ObCustomerRma" />
+            <dataField fieldName="Birthday" columns="10" />
+            <dataField fieldName="Salutation" columns="5" />
+            <dataField fieldName="DateAdded" columns="10" />
+            <dataField fieldName="Roles" />
+            <dataField fieldName="LastName" columns="30" />
+            <dataField fieldName="FamilarName" columns="30" />
+            <dataField fieldName="RolesForDisplay" />
+            <dataField fieldName="Email" />
+            <dataField fieldName="DateLastChange" columns="10" />
+            <dataField fieldName="Family" />
+            <dataField fieldName="MobilePhone" columns="14" />
+            <dataField fieldName="Title" columns="30" />
+            <dataField fieldName="Name" columns="40" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="New Customer Contacts">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="ID" columns="15" />
+            <dataField fieldName="Basversion" columns="15" />
+            <dataField fieldName="Bastimestamp" columns="10" />
+            <dataField fieldName="FirstName" columns="30" />
+            <dataField fieldName="IsPa" />
+            <dataField fieldName="Anniversary" columns="10" />
+            <dataField fieldName="Ext" columns="4" />
+            <dataField fieldName="Comments" />
+            <dataField fieldName="HomePhone" columns="14" />
+            <dataField fieldName="Likes" />
+            <dataField fieldName="EmpHist" />
+            <dataField fieldName="DateInactivated" columns="10" />
+            <dataField fieldName="WorkPhone" columns="14" />
+            <dataField fieldName="ObCustomerRen" />
+            <dataField fieldName="ObCustomerRid" aliasFieldName="obCustomerRName" />
+            <dataField fieldName="ObCustomerRpsSectorRname" columns="20" />
+            <dataField fieldName="ObCustomerRma" />
+            <dataField fieldName="Birthday" columns="10" />
+            <dataField fieldName="Salutation" columns="5" />
+            <dataField fieldName="DateAdded" columns="10" />
+            <dataField fieldName="Roles" />
+            <dataField fieldName="LastName" columns="30" />
+            <dataField fieldName="FamilarName" columns="30" />
+            <dataField fieldName="RolesForDisplay" />
+            <dataField fieldName="Email" />
+            <dataField fieldName="DateLastChange" columns="10" />
+            <dataField fieldName="Family" />
+            <dataField fieldName="MobilePhone" columns="14" />
+            <dataField fieldName="Title" columns="30" />
+            <dataField fieldName="Name" columns="40" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" commandArgument="Save" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" commandArgument="Save" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" commandArgument="SaveAndNew" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenLastCommandArgument="Save" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenClientScript="this.hasDetails()" />
+      <action id="a14" whenLastCommandName="Insert" whenLastCommandArgument="SaveAndNew" commandName="New" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+      <action id="a2" />
+      <action id="a3" commandName="ExportRowset" />
+      <action id="a4" commandName="ExportRss" />
+      <action id="a5" />
+      <action id="a6" commandName="Import" commandArgument="createForm1" />
+      <action id="a7" commandName="DataSheet" />
+      <action id="a8" commandName="Grid" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag9" scope="ActionColumn">
+      <action id="a1" commandName="Edit" commandArgument="editForm1" />
+      <action id="a2" commandName="Delete" />
+    </actionGroup>
+  </actions>
+</dataController>

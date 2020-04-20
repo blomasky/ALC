@@ -1,0 +1,106 @@
+<application snapshot="true" integrity="checked" xmlns="urn:schemas-codeontime-com:data-aquarium-application" xmlns:m="urn:codeontime:data-map" xmlns:dm="urn:schemas-codeontime-com:data-model">
+  <pages>
+    <page name="Home" title="^HomeTitle^Start^HomeTitle^" description="^HomeDesc^Application home page^HomeDesc^" path="^HomePath^Home^HomePath^" customStyle="Wide" index="1000" useExtenders="false" offline="false" template="(blank)">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewColumn" />
+      </containers>
+      <controls>
+        <control id="control1" name="TableOfContents" container="container1" />
+        <control id="control2" name="Welcome" container="container2" />
+      </controls>
+    </page>
+    <page name="Customers" title="Customers" description="View Customers" index="1010" path="Customers" useExtenders="false" offline="false">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Customers" view="grid1" showInSummary="true" container="container1" activator="None" text="" />
+      </dataViews>
+      <controls />
+      <about>This page allows customers management.</about>
+    </page>
+    <page name="Orders" title="Orders" description="View Orders" index="1020" path="Orders" useExtenders="false" offline="false">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Orders" view="grid1" showInSummary="true" container="container1" activator="None" text="" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows orders management.</about>
+    </page>
+    <page name="CustomerContacts" title="Customer Contacts" description="View Customer Contacts" index="1030" path="Customer Contacts">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="CustomerContacts" view="grid1" showInSummary="true" container="container1" activator="None" text="" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows customer contacts management.</about>
+    </page>
+    <page name="Sectors" title="Sectors" description="View Sectors" index="1040" path="Sectors">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Sectors" view="grid1" showInSummary="true" container="container1" activator="None" text="" />
+      </dataViews>
+      <controls />
+      <about>This page allows sectors management.</about>
+    </page>
+  </pages>
+  <userControls>
+    <userControl name="TableOfContents" prefix="uc" generate="Always">
+      <body>
+                
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;div class="ParaInfo"&gt;
+        ^TocInstruction^Please select a page link in the table of contents below.^TocInstruction^
+    &lt;/div&gt;
+    &lt;div class="ParaHeader"&gt;
+        ^TocHeader^Site Map^TocHeader^
+    &lt;/div&gt;
+    &lt;div data-role="placeholder" data-placeholder="site-map"&gt;&lt;/div&gt;
+
+    &lt;div id="app-sitemap" data-app-role="page" data-activator="Button|^TocHeader^Site Map^TocHeader^"&gt;
+        &lt;p&gt;
+            &lt;span&gt;^TocInstruction^Please select a page link in the table of contents below.^TocInstruction^&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;div data-app-role="sitemap"&gt;&lt;/div&gt;
+        &lt;p&gt;
+            &lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+              </body>
+    </userControl>
+    <userControl name="Welcome" prefix="uc" generate="Always">
+      <body>
+                  
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+                
+&lt;div style="padding-left:8px"&gt;&lt;div class="ParaInfo"&gt;
+        Select a page in a table of content.&lt;/div&gt;
+&lt;div class="ParaHeader"&gt;
+    Instructions
+&lt;/div&gt;
+&lt;div class="ParaText"&gt;
+    Membership option has not been selected for this application. 
+    The entire site content can be accessed without any restrictions.
+&lt;/div&gt;
+
+                  
+&lt;/body&gt;
+&lt;/html&gt;
+                </body>
+    </userControl>
+  </userControls>
+</application>

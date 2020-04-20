@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="Orders" alias="Orders" created="2020-04-20T12:22:54" modified="2020-04-20T12:28:34" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="ob_Customers_R" parentTableSchema="dbo" parentTableName="Customers" x="425" y="20">
+      <foreignKeyColumn columnName="ob_Customers_RID" parentColumnName="ID" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column name="ID" fieldName="ID" label="Id" />
+    <column name="BASVERSION" fieldName="Basversion" label="Basversion" />
+    <column name="BASTIMESTAMP" fieldName="Bastimestamp" label="Bastimestamp" />
+    <column name="daysUntilDeadline" fieldName="DaysUntilDeadline" label="days Until Deadline" />
+    <column name="dateCode" fieldName="DateCode" label="date Code" />
+    <column name="dropShipFlag" fieldName="DropShipFlag" label="drop Ship Flag" />
+    <column name="DOLChange" fieldName="Dolchange" label="Last Chg" />
+    <column name="totalBMEs" fieldName="TotalBmes" label="tot BMEs" />
+    <column name="FOB" fieldName="Fob" label="Fob" />
+    <column name="creditNumber" fieldName="CreditNumber" label="credit Number" />
+    <column name="profit" fieldName="Profit" label="Profit" />
+    <column name="terms" fieldName="Terms" label="Terms" />
+    <column name="totalSale" fieldName="TotalSale" label="total Sale" />
+    <column name="noShippableLines" fieldName="NoShippableLines" label="no Shippable Lines" />
+    <column name="noLines" fieldName="NoLines" label="no Lines" />
+    <column name="PONumber" fieldName="Ponumber" label="PO Number" />
+    <column name="fieldRep" fieldName="FieldRep" label="Rep" />
+    <column name="dropShipAddress" fieldName="DropShipAddress" label="drop Ship Address" />
+    <column name="tripNumber" fieldName="TripNumber" label="Trip No" />
+    <column name="ps_userID_REN" fieldName="PsUseridRen" label="psuser IDREN" />
+    <column name="ps_userID_RID" fieldName="PsUseridRid" label="psuser IDRID" />
+    <column name="ps_userID_RMA" fieldName="PsUseridRma" label="psuser IDRMA" />
+    <column name="shipVia" fieldName="ShipVia" label="ship Via" />
+    <column name="orderNumber" fieldName="OrderNumber" label="order Number" />
+    <column name="dateEntered" fieldName="DateEntered" label="Entered" />
+    <column name="dating" fieldName="Dating" label="Dating" />
+    <column name="dateShipped" fieldName="DateShipped" label="Shipped" />
+    <column name="ob_Customers_REN" fieldName="ObCustomersRen" label="ob Customers REN" />
+    <column name="ob_Customers_RID" fieldName="ObCustomersRid" label="ob Customers RID" aliasColumnName="name" aliasForeignKey="ob_Customers_R" />
+    <column name="name" fieldName="obCustomersRName" label="Ship To" foreignKey="ob_Customers_R" />
+    <column name="city" fieldName="obCustomersRCity" label="Ship To City" foreignKey="ob_Customers_R" />
+    <column name="ob_Customers_RMA" fieldName="ObCustomersRma" label="ob Customers RMA" />
+    <column name="contact" fieldName="Contact" label="Contact" />
+    <column name="totalCost" fieldName="TotalCost" label="total Cost" format="c" />
+    <column name="daysUntilTrip" fieldName="DaysUntilTrip" label="days Until Trip" />
+    <column name="estDeliveryDate" fieldName="EstDeliveryDate" label="Est. Del." />
+    <column name="deadline" fieldName="Deadline" label="Deadline" />
+    <column name="pickup" fieldName="Pickup" label="Pickup" />
+    <column name="ob_BillTo_REN" fieldName="ObBilltoRen" label="ob Bill To REN" />
+    <column name="ob_BillTo_RID" fieldName="ObBilltoRid" label="ob Bill To RID" />
+    <column name="ob_BillTo_RMA" fieldName="ObBilltoRma" label="ob Bill To RMA" />
+    <column name="deferred" fieldName="Deferred" label="Deferred" />
+    <column name="specialStatus" fieldName="SpecialStatus" label="special Status" />
+    <column name="ps_DeliveryLocationUNUSED_REN" fieldName="PsDeliverylocationunusedRen" label="ps Delivery Location UNUSEDREN" />
+    <column name="ps_DeliveryLocationUNUSED_RID" fieldName="PsDeliverylocationunusedRid" label="ps Delivery Location UNUSEDRID" />
+    <column name="ps_DeliveryLocationUNUSED_RMA" fieldName="PsDeliverylocationunusedRma" label="ps Delivery Location UNUSEDRMA" />
+    <column name="contractorFlag" fieldName="ContractorFlag" label="contractor Flag" />
+    <column name="BMEsperFT3" fieldName="BmesperFt3" label="BM Esper FT3" />
+    <column name="BMEsperLB" fieldName="BmesperLb" label="BM Esper LB" />
+    <column name="codFlag" fieldName="CodFlag" label="cod Flag" />
+    <column name="approvalCode" fieldName="ApprovalCode" label="approval Code" />
+    <column name="orderNumberAsString" fieldName="OrderNumberAsString" label="order Number As String" />
+    <column name="sendEmailFlag" fieldName="SendEmailFlag" label="send Email Flag" />
+    <column name="emailReturnStatus" fieldName="EmailReturnStatus" label="email Return Status" />
+    <column name="invoicePrinted" fieldName="InvoicePrinted" label="invoice Printed" />
+    <column name="invoiceSequenceNumber" fieldName="InvoiceSequenceNumber" label="invoice Sequence Number" />
+    <column name="dateInvoicePrinted" fieldName="DateInvoicePrinted" label="date Invoice Printed" />
+    <column name="holdShipments" fieldName="HoldShipments" label="hold Shipments" />
+    <column name="holdDesign" fieldName="HoldDesign" label="hold Design" />
+    <column name="noLinesWP" fieldName="NoLinesWp" label="no Lines WP" />
+    <column name="datingDays" fieldName="DatingDays" label="dating Days" />
+    <column name="dateInvoiced" fieldName="DateInvoiced" label="date Invoiced" />
+    <column name="contractorCompleted" fieldName="ContractorCompleted" label="contractor Completed" />
+    <column name="originalShipTo_REN" fieldName="OriginalshiptoRen" label="original Ship To REN" />
+    <column name="originalShipTo_RID" fieldName="OriginalshiptoRid" label="original Ship To RID" />
+    <column name="originalShipTo_RMA" fieldName="OriginalshiptoRma" label="original Ship To RMA" />
+    <column name="wpPostedToLinesString" fieldName="WpPostedToLinesString" label="wp Posted To Lines String" />
+    <column name="tripDate" fieldName="TripDate" label="trip Date" />
+    <column name="PODSigned" fieldName="Podsigned" label="POD Signed" />
+    <column name="orderTotal" fieldName="OrderTotal" label="order Total" />
+    <column name="salesTax" fieldName="SalesTax" label="sales Tax" />
+    <column name="ps_AltDeliveryLocation_REN" fieldName="PsAltdeliverylocationRen" label="ps Alt Delivery Location REN" />
+    <column name="ps_AltDeliveryLocation_RID" fieldName="PsAltdeliverylocationRid" label="ps Alt Delivery Location RID" />
+    <column name="ps_AltDeliveryLocation_RMA" fieldName="PsAltdeliverylocationRma" label="ps Alt Delivery Location RMA" />
+    <column name="keyboarder_REN" fieldName="KeyboarderRen" label="keyboarder REN" />
+    <column name="keyboarder_RID" fieldName="KeyboarderRid" label="keyboarder RID" />
+    <column name="keyboarder_RMA" fieldName="KeyboarderRma" label="keyboarder RMA" />
+    <column name="toRest" fieldName="ToRest" label="to Rest" />
+    <column name="fromRest" fieldName="FromRest" label="from Rest" />
+  </columns>
+</dataModel>
