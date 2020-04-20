@@ -6,5 +6,6 @@
     <siteMapNode title="Orders" description="View Orders" url="~/pages/orders" />
     <siteMapNode title="Customer Contacts" description="View Customer Contacts" url="~/pages/customer-contacts" />
     <siteMapNode title="Sectors" description="View Sectors" url="~/pages/sectors" />
+    <siteMapNode title="Regular User" description="View Regular User" url="~/pages/regular-user" />
   </siteMapNode>
 </siteMap>

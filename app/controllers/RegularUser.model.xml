@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="RegularUser" alias="RegularUser" created="2020-04-20T15:02:30" modified="2020-04-20T15:02:37" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys />
+  <columns>
+    <column name="ID" fieldName="ID" label="Id" />
+    <column name="BASVERSION" fieldName="Basversion" label="Basversion" />
+    <column name="BASTIMESTAMP" fieldName="Bastimestamp" label="Bastimestamp" />
+    <column name="AccessLevel" fieldName="AccessLevel" label="Access Level" />
+    <column name="Theme" fieldName="Theme" label="Theme" />
+    <column name="TimeZone" fieldName="TimeZone" label="Time Zone" />
+    <column name="Password" fieldName="Password" label="Password" />
+    <column name="RTL" fieldName="Rtl" label="Rtl" />
+    <column name="LoginName" fieldName="LoginName" label="Login Name" />
+    <column name="Locale" fieldName="Locale" label="Locale" />
+    <column name="fullName" fieldName="FullName" label="full Name" />
+    <column name="onlyPocketWood" fieldName="OnlyPocketWood" label="only Pocket Wood" />
+    <column name="headingForTripCustomerSummary" fieldName="HeadingForTripCustomerSummary" label="heading For Trip Customer Summary" />
+    <column name="genericMsg" fieldName="GenericMsg" label="generic Msg" />
+    <column name="selectedTripCalendar_REN" fieldName="SelectedtripcalendarRen" label="selected Trip Calendar REN" />
+    <column name="selectedTripCalendar_RID" fieldName="SelectedtripcalendarRid" label="selected Trip Calendar RID" />
+    <column name="selectedTripCalendar_RMA" fieldName="SelectedtripcalendarRma" label="selected Trip Calendar RMA" />
+    <column name="length" fieldName="Length" label="Length" />
+    <column name="selectedCustomerDashboard_REN" fieldName="SelectedcustomerdashboardRen" label="selected Customer Dashboard REN" />
+    <column name="selectedCustomerDashboard_RID" fieldName="SelectedcustomerdashboardRid" label="selected Customer Dashboard RID" />
+    <column name="selectedCustomerDashboard_RMA" fieldName="SelectedcustomerdashboardRma" label="selected Customer Dashboard RMA" />
+    <column name="CADUnDigTo" fieldName="CadunDigTo" label="CAD Un Dig To" />
+    <column name="seeAllCustomers" fieldName="SeeAllCustomers" label="see All Customers" />
+    <column name="vendorIDForPurchaseAdvisory" fieldName="VendorIdforPurchaseAdvisory" label="vendor ID For Purchase Advisory" />
+    <column name="CADSkipIntact" fieldName="CadskipIntact" label="CAD Skip Intact" />
+    <column name="ShowOrderLinesBelowStock" fieldName="ShowOrderLinesBelowStock" label="Show Order Lines Below Stock" />
+    <column name="onlyStock" fieldName="OnlyStock" label="only Stock" />
+    <column name="quoteHeader" fieldName="QuoteHeader" label="quote Header" />
+    <column name="firsttDateForTripQuery" fieldName="FirsttDateForTripQuery" label="firstt Date For Trip Query" />
+    <column name="dateLastPAUpdated" fieldName="DateLastPaupdated" label="date Last PA Updated" />
+    <column name="projectedCost" fieldName="ProjectedCost" label="projected Cost" format="c" />
+    <column name="scriptText" fieldName="ScriptText" label="script Text" />
+    <column name="CADHandle" fieldName="Cadhandle" label="CAD Handle" />
+    <column name="selectedCustomerContact_REN" fieldName="SelectedcustomercontactRen" label="selected Customer Contact REN" />
+    <column name="selectedCustomerContact_RID" fieldName="SelectedcustomercontactRid" label="selected Customer Contact RID" />
+    <column name="selectedCustomerContact_RMA" fieldName="SelectedcustomercontactRma" label="selected Customer Contact RMA" />
+    <column name="flagToAddUnit" fieldName="FlagToAddUnit" label="flag To Add Unit" />
+    <column name="selectedPurchaseLine_REN" fieldName="SelectedpurchaselineRen" label="selected Purchase Line REN" />
+    <column name="selectedPurchaseLine_RID" fieldName="SelectedpurchaselineRid" label="selected Purchase Line RID" />
+    <column name="selectedPurchaseLine_RMA" fieldName="SelectedpurchaselineRma" label="selected Purchase Line RMA" />
+    <column name="selectedSectorID" fieldName="SelectedSectorID" label="selected Sector ID" />
+    <column name="lastUnit" fieldName="LastUnit" label="last Unit" />
+    <column name="UMAvailableFormatted" fieldName="UmavailableFormatted" label="UM Available Formatted" />
+    <column name="CADOnlyTripped" fieldName="CadonlyTripped" label="CAD Only Tripped" />
+    <column name="customerForQuoteQuery_REN" fieldName="CustomerforquotequeryRen" label="customer For Quote Query REN" />
+    <column name="customerForQuoteQuery_RID" fieldName="CustomerforquotequeryRid" label="customer For Quote Query RID" />
+    <column name="customerForQuoteQuery_RMA" fieldName="CustomerforquotequeryRma" label="customer For Quote Query RMA" />
+    <column name="netCost" fieldName="NetCost" label="net Cost" format="c" />
+    <column name="CADMaxNoOfSource" fieldName="CadmaxNoOfSource" label="CAD Max No Of Source" />
+    <column name="purchaseAdvisoryFromDate" fieldName="PurchaseAdvisoryFromDate" label="purchase Advisory From Date" />
+    <column name="previousNoDaysForPurchaseAdvisory" fieldName="PreviousNoDaysForPurchaseAdvisory" label="previous No Days For Purchase Advisory" />
+    <column name="sourceUnitNumber" fieldName="SourceUnitNumber" label="source Unit Number" />
+    <column name="paymentBatchHeaderID" fieldName="PaymentBatchHeaderID" label="payment Batch Header ID" />
+    <column name="selectedUnit_REN" fieldName="SelectedunitRen" label="selected Unit REN" />
+    <column name="selectedUnit_RID" fieldName="SelectedunitRid" label="selected Unit RID" />
+    <column name="selectedUnit_RMA" fieldName="SelectedunitRma" label="selected Unit RMA" />
+    <column name="suggestedPrice" fieldName="SuggestedPrice" label="suggested Price" format="c" />
+    <column name="selectedTemplate_REN" fieldName="SelectedtemplateRen" label="selected Template REN" />
+    <column name="selectedTemplate_RID" fieldName="SelectedtemplateRid" label="selected Template RID" />
+    <column name="selectedTemplate_RMA" fieldName="SelectedtemplateRma" label="selected Template RMA" />
+    <column name="dim2" fieldName="Dim2" label="Dim2" />
+    <column name="emailForReports" fieldName="EmailForReports" label="email For Reports" />
+    <column name="UMOpenPOFormatted" fieldName="UmopenPoformatted" label="UM Open PO Formatted" />
+    <column name="dim1" fieldName="Dim1" label="Dim1" />
+    <column name="lastOrderNumber" fieldName="LastOrderNumber" label="last Order Number" />
+    <column name="route" fieldName="Route" label="Route" />
+    <column name="filterReminderCustomers" fieldName="FilterReminderCustomers" label="filter Reminder Customers" />
+    <column name="dateFilterForQuoteQuery" fieldName="DateFilterForQuoteQuery" label="date Filter For Quote Query" />
+    <column name="CADShowDesigned" fieldName="CadshowDesigned" label="CAD Show Designed" />
+    <column name="itemSearch3" fieldName="ItemSearch3" label="item Search3" />
+    <column name="itemSearch2" fieldName="ItemSearch2" label="item Search2" />
+    <column name="qtyToAddToPO" fieldName="QtyToAddToPo" label="qty To Add To PO" />
+    <column name="tripDate" fieldName="TripDate" label="trip Date" />
+    <column name="noTripDashboard" fieldName="NoTripDashboard" label="no Trip Dashboard" />
+    <column name="noDaysForPurchaseAdvisory" fieldName="NoDaysForPurchaseAdvisory" label="no Days For Purchase Advisory" />
+    <column name="CADIgnoreDates" fieldName="CadignoreDates" label="CAD Ignore Dates" />
+    <column name="CADPlus" fieldName="Cadplus" label="CAD Plus" />
+    <column name="terminalSalesDate" fieldName="TerminalSalesDate" label="terminal Sales Date" />
+    <column name="selectedItem_REN" fieldName="SelecteditemRen" label="selected Item REN" />
+    <column name="selectedItem_RID" fieldName="SelecteditemRid" label="selected Item RID" />
+    <column name="selectedItem_RMA" fieldName="SelecteditemRma" label="selected Item RMA" />
+    <column name="numberOpenQuotes" fieldName="NumberOpenQuotes" label="number Open Quotes" />
+    <column name="itemID" fieldName="ItemID" label="item ID" />
+    <column name="selectedPurchaseOrder_REN" fieldName="SelectedpurchaseorderRen" label="selected Purchase Order REN" />
+    <column name="selectedPurchaseOrder_RID" fieldName="SelectedpurchaseorderRid" label="selected Purchase Order RID" />
+    <column name="selectedPurchaseOrder_RMA" fieldName="SelectedpurchaseorderRma" label="selected Purchase Order RMA" />
+    <column name="dropShipAddress" fieldName="DropShipAddress" label="drop Ship Address" />
+    <column name="tank" fieldName="Tank" label="Tank" />
+    <column name="designerComments" fieldName="DesignerComments" label="designer Comments" />
+    <column name="quotePO" fieldName="QuotePo" label="quote PO" />
+    <column name="CADCustomer" fieldName="Cadcustomer" label="CAD Customer" />
+    <column name="firstUnit" fieldName="FirstUnit" label="first Unit" />
+    <column name="purchaseAdvisoryThruDate" fieldName="PurchaseAdvisoryThruDate" label="purchase Advisory Thru Date" />
+    <column name="CADWide" fieldName="Cadwide" label="CAD Wide" />
+    <column name="printOrderAcknowledgement" fieldName="PrintOrderAcknowledgement" label="print Order Acknowledgement" />
+    <column name="selectedTerminalItem_REN" fieldName="SelectedterminalitemRen" label="selected Terminal Item REN" />
+    <column name="selectedTerminalItem_RID" fieldName="SelectedterminalitemRid" label="selected Terminal Item RID" />
+    <column name="selectedTerminalItem_RMA" fieldName="SelectedterminalitemRma" label="selected Terminal Item RMA" />
+    <column name="CADSourceUnitNumber" fieldName="CadsourceUnitNumber" label="CAD Source Unit Number" />
+    <column name="CADDrillNumber" fieldName="CaddrillNumber" label="CAD Drill Number" />
+    <column name="showOnlyRollingTripFlag" fieldName="ShowOnlyRollingTripFlag" label="show Only Rolling Trip Flag" />
+    <column name="tripNumber" fieldName="TripNumber" label="trip Number" />
+    <column name="newStopNumber" fieldName="NewStopNumber" label="new Stop Number" />
+    <column name="selectedCADSourceUnit_REN" fieldName="SelectedcadsourceunitRen" label="selected CAD Source Unit REN" />
+    <column name="selectedCADSourceUnit_RID" fieldName="SelectedcadsourceunitRid" label="selected CAD Source Unit RID" />
+    <column name="selectedCADSourceUnit_RMA" fieldName="SelectedcadsourceunitRma" label="selected CAD Source Unit RMA" />
+    <column name="parametersForJasper" fieldName="ParametersForJasper" label="parameters For Jasper" />
+    <column name="selectedVendor_REN" fieldName="SelectedvendorRen" label="selected Vendor REN" />
+    <column name="selectedVendor_RID" fieldName="SelectedvendorRid" label="selected Vendor RID" />
+    <column name="selectedVendor_RMA" fieldName="SelectedvendorRma" label="selected Vendor RMA" />
+    <column name="designStatus" fieldName="DesignStatus" label="design Status" />
+    <column name="unitNumber" fieldName="UnitNumber" label="unit Number" />
+    <column name="CADHigh" fieldName="Cadhigh" label="CAD High" />
+    <column name="selectedFreshQuote_REN" fieldName="SelectedfreshquoteRen" label="selected Fresh Quote REN" />
+    <column name="selectedFreshQuote_RID" fieldName="SelectedfreshquoteRid" label="selected Fresh Quote RID" />
+    <column name="selectedFreshQuote_RMA" fieldName="SelectedfreshquoteRma" label="selected Fresh Quote RMA" />
+    <column name="selectedCustomer_REN" fieldName="SelectedcustomerRen" label="selected Customer REN" />
+    <column name="selectedCustomer_RID" fieldName="SelectedcustomerRid" label="selected Customer RID" />
+    <column name="selectedCustomer_RMA" fieldName="SelectedcustomerRma" label="selected Customer RMA" />
+    <column name="customerFilterActive" fieldName="CustomerFilterActive" label="customer Filter Active" />
+    <column name="CADTotalPieces" fieldName="CadtotalPieces" label="CAD Total Pieces" />
+    <column name="terminalPONumber_REN" fieldName="TerminalponumberRen" label="terminal PO Number REN" />
+    <column name="terminalPONumber_RID" fieldName="TerminalponumberRid" label="terminal PO Number RID" />
+    <column name="terminalPONumber_RMA" fieldName="TerminalponumberRma" label="terminal PO Number RMA" />
+    <column name="selectedOrderLine_REN" fieldName="SelectedorderlineRen" label="selected Order Line REN" />
+    <column name="selectedOrderLine_RID" fieldName="SelectedorderlineRid" label="selected Order Line RID" />
+    <column name="selectedOrderLine_RMA" fieldName="SelectedorderlineRma" label="selected Order Line RMA" />
+    <column name="numberOfCustomersToContact" fieldName="NumberOfCustomersToContact" label="number Of Customers To Contact" />
+    <column name="noUnits" fieldName="NoUnits" label="no Units" />
+    <column name="selectedQuote_REN" fieldName="SelectedquoteRen" label="selected Quote REN" />
+    <column name="selectedQuote_RID" fieldName="SelectedquoteRid" label="selected Quote RID" />
+    <column name="selectedQuote_RMA" fieldName="SelectedquoteRma" label="selected Quote RMA" />
+    <column name="selectedOrder_REN" fieldName="SelectedorderRen" label="selected Order REN" />
+    <column name="selectedOrder_RID" fieldName="SelectedorderRid" label="selected Order RID" />
+    <column name="selectedOrder_RMA" fieldName="SelectedorderRma" label="selected Order RMA" />
+    <column name="showCustomerForm" fieldName="ShowCustomerForm" label="show Customer Form" />
+    <column name="selectedBillTo_REN" fieldName="SelectedbilltoRen" label="selected Bill To REN" />
+    <column name="selectedBillTo_RID" fieldName="SelectedbilltoRid" label="selected Bill To RID" />
+    <column name="selectedBillTo_RMA" fieldName="SelectedbilltoRma" label="selected Bill To RMA" />
+    <column name="itemSearch" fieldName="ItemSearch" label="item Search" />
+    <column name="CADKillWithLess" fieldName="CadkillWithLess" label="CAD Kill With Less" />
+    <column name="CADTripNumber" fieldName="CadtripNumber" label="CAD Trip Number" />
+    <column name="numberFreshQuotes" fieldName="NumberFreshQuotes" label="number Fresh Quotes" />
+    <column name="selectedTripStop_REN" fieldName="SelectedtripstopRen" label="selected Trip Stop REN" />
+    <column name="selectedTripStop_RID" fieldName="SelectedtripstopRid" label="selected Trip Stop RID" />
+    <column name="selectedTripStop_RMA" fieldName="SelectedtripstopRma" label="selected Trip Stop RMA" />
+    <column name="costToAddToPO" fieldName="CostToAddToPo" label="cost To Add To PO" format="c" />
+    <column name="CADNumberOfTargets" fieldName="CadnumberOfTargets" label="CAD Number Of Targets" />
+    <column name="CADShowUndesigned" fieldName="CadshowUndesigned" label="CAD Show Undesigned" />
+    <column name="selectedCADDrill_REN" fieldName="SelectedcaddrillRen" label="selected CAD Drill REN" />
+    <column name="selectedCADDrill_RID" fieldName="SelectedcaddrillRid" label="selected CAD Drill RID" />
+    <column name="selectedCADDrill_RMA" fieldName="SelectedcaddrillRma" label="selected CAD Drill RMA" />
+    <column name="selectedInventoryRebate_REN" fieldName="SelectedinventoryrebateRen" label="selected Inventory Rebate REN" />
+    <column name="selectedInventoryRebate_RID" fieldName="SelectedinventoryrebateRid" label="selected Inventory Rebate RID" />
+    <column name="selectedInventoryRebate_RMA" fieldName="SelectedinventoryrebateRma" label="selected Inventory Rebate RMA" />
+    <column name="stockOnly" fieldName="StockOnly" label="stock Only" />
+    <column name="futureBuysDateThru" fieldName="FutureBuysDateThru" label="future Buys Date Thru" />
+    <column name="selectedTerminalCommitment_REN" fieldName="SelectedterminalcommitmentRen" label="selected Terminal Commitment REN" />
+    <column name="selectedTerminalCommitment_RID" fieldName="SelectedterminalcommitmentRid" label="selected Terminal Commitment RID" />
+    <column name="selectedTerminalCommitment_RMA" fieldName="SelectedterminalcommitmentRma" label="selected Terminal Commitment RMA" />
+    <column name="selectedTerminalShipment_REN" fieldName="SelectedterminalshipmentRen" label="selected Terminal Shipment REN" />
+    <column name="selectedTerminalShipment_RID" fieldName="SelectedterminalshipmentRid" label="selected Terminal Shipment RID" />
+    <column name="selectedTerminalShipment_RMA" fieldName="SelectedterminalshipmentRma" label="selected Terminal Shipment RMA" />
+    <column name="terminalSelected" fieldName="TerminalSelected" label="terminal Selected" />
+    <column name="futureBuysFlag" fieldName="FutureBuysFlag" label="future Buys Flag" />
+    <column name="selectedPurchaseAdvisory_REN" fieldName="SelectedpurchaseadvisoryRen" label="selected Purchase Advisory REN" />
+    <column name="selectedPurchaseAdvisory_RID" fieldName="SelectedpurchaseadvisoryRid" label="selected Purchase Advisory RID" />
+    <column name="selectedPurchaseAdvisory_RMA" fieldName="SelectedpurchaseadvisoryRma" label="selected Purchase Advisory RMA" />
+    <column name="showAllPurchaseAdvisory" fieldName="ShowAllPurchaseAdvisory" label="show All Purchase Advisory" />
+    <column name="salesRepSupport" fieldName="SalesRepSupport" label="sales Rep Support" />
+    <column name="selectedUM" fieldName="SelectedUm" label="selected UM" />
+    <column name="pattern" fieldName="Pattern" label="Pattern" />
+    <column name="product" fieldName="Product" label="Product" />
+    <column name="oldCode" fieldName="OldCode" label="old Code" />
+    <column name="selectedTemplatableInventory_REN" fieldName="SelectedtemplatableinventoryRen" label="selected Templatable Inventory REN" />
+    <column name="selectedTemplatableInventory_RID" fieldName="SelectedtemplatableinventoryRid" label="selected Templatable Inventory RID" />
+    <column name="selectedTemplatableInventory_RMA" fieldName="SelectedtemplatableinventoryRma" label="selected Templatable Inventory RMA" />
+    <column name="marketCost" fieldName="MarketCost" label="market Cost" format="c" />
+    <column name="marketPrice" fieldName="MarketPrice" label="market Price" format="c" />
+    <column name="GPPercent" fieldName="Gppercent" label="GP Percent" />
+    <column name="profitTotal" fieldName="ProfitTotal" label="profit Total" />
+    <column name="salesTotal" fieldName="SalesTotal" label="sales Total" />
+    <column name="editingQuoteThatIsAnOrder" fieldName="EditingQuoteThatIsAnOrder" label="editing Quote That Is An Order" />
+    <column name="MEOQ" fieldName="Meoq" label="Meoq" />
+    <column name="invoiceDate" fieldName="InvoiceDate" label="invoice Date" />
+    <column name="RESTAttribute" fieldName="Restattribute" label="REST Attribute" />
+    <column name="selectedDate" fieldName="SelectedDate" label="selected Date" />
+    <column name="selectedReturns_REN" fieldName="SelectedreturnsRen" label="selected Returns REN" />
+    <column name="selectedReturns_RID" fieldName="SelectedreturnsRid" label="selected Returns RID" />
+    <column name="selectedReturns_RMA" fieldName="SelectedreturnsRma" label="selected Returns RMA" />
+    <column name="selectedUnitsToCombine_REN" fieldName="SelectedunitstocombineRen" label="selected Units To Combine REN" />
+    <column name="selectedUnitsToCombine_RID" fieldName="SelectedunitstocombineRid" label="selected Units To Combine RID" />
+    <column name="selectedUnitsToCombine_RMA" fieldName="SelectedunitstocombineRma" label="selected Units To Combine RMA" />
+    <column name="selectedOrderLineForTransfer_REN" fieldName="SelectedorderlinefortransferRen" label="selected Order Line For Transfer REN" />
+    <column name="selectedOrderLineForTransfer_RID" fieldName="SelectedorderlinefortransferRid" label="selected Order Line For Transfer RID" />
+    <column name="selectedOrderLineForTransfer_RMA" fieldName="SelectedorderlinefortransferRma" label="selected Order Line For Transfer RMA" />
+    <column name="selectedSourceUnit_REN" fieldName="SelectedsourceunitRen" label="selected Source Unit REN" />
+    <column name="selectedSourceUnit_RID" fieldName="SelectedsourceunitRid" label="selected Source Unit RID" />
+    <column name="selectedSourceUnit_RMA" fieldName="SelectedsourceunitRma" label="selected Source Unit RMA" />
+    <column name="selectedTargetUnit_REN" fieldName="SelectedtargetunitRen" label="selected Target Unit REN" />
+    <column name="selectedTargetUnit_RID" fieldName="SelectedtargetunitRid" label="selected Target Unit RID" />
+    <column name="selectedTargetUnit_RMA" fieldName="SelectedtargetunitRma" label="selected Target Unit RMA" />
+    <column name="itemIDForItemsForUnitsToCombine" fieldName="ItemIdforItemsForUnitsToCombine" label="item ID For Items For Units To Combine" />
+    <column name="unitsToCombineFrom" fieldName="UnitsToCombineFrom" label="units To Combine From" />
+    <column name="SessionTimeout" fieldName="SessionTimeout" label="Session Timeout" />
+    <column name="heading" fieldName="Heading" label="Heading" />
+    <column name="returnActionToDisplay" fieldName="ReturnActionToDisplay" label="return Action To Display" />
+    <column name="totLensWithStock" fieldName="TotLensWithStock" label="tot Lens With Stock" />
+    <column name="orderLineFor3rdParty" fieldName="OrderLineFor3rdParty" label="order Line For3rd Party" />
+    <column name="flagToAddNewUnitToOrderUnits" fieldName="FlagToAddNewUnitToOrderUnits" label="flag To Add New Unit To Order Units" />
+    <column name="newUnitCost" fieldName="NewUnitCost" label="new Unit Cost" format="c" />
+    <column name="wholeUnitsUMStock" fieldName="WholeUnitsUmstock" label="whole Units UM Stock" />
+    <column name="showOnlyOpenPOs" fieldName="ShowOnlyOpenPos" label="show Only Open P Os" />
+    <column name="selectedCADDrillForSubstitute_REN" fieldName="SelectedcaddrillforsubstituteRen" label="selected CAD Drill For Substitute REN" />
+    <column name="selectedCADDrillForSubstitute_RID" fieldName="SelectedcaddrillforsubstituteRid" label="selected CAD Drill For Substitute RID" />
+    <column name="selectedCADDrillForSubstitute_RMA" fieldName="SelectedcaddrillforsubstituteRma" label="selected CAD Drill For Substitute RMA" />
+    <column name="noLengths" fieldName="NoLengths" label="no Lengths" />
+    <column name="fieldRep" fieldName="FieldRep" label="field Rep" />
+    <column name="serviceChargeDescription" fieldName="ServiceChargeDescription" label="service Charge Description" />
+    <column name="UMAllocatedToOrderLine" fieldName="UmallocatedToOrderLine" label="UM Allocated To Order Line" />
+    <column name="totalDiscount" fieldName="TotalDiscount" label="total Discount" />
+    <column name="totalPaid" fieldName="TotalPaid" label="total Paid" />
+    <column name="orderNumber" fieldName="OrderNumber" label="order Number" />
+    <column name="totalWholeUnits" fieldName="TotalWholeUnits" label="total Whole Units" />
+    <column name="totalDesignedLines" fieldName="TotalDesignedLines" label="total Designed Lines" />
+    <column name="quoteLineBelowMinPrice" fieldName="QuoteLineBelowMinPrice" label="quote Line Below Min Price" format="c" />
+    <column name="daysInPayPeriod" fieldName="DaysInPayPeriod" label="days In Pay Period" />
+    <column name="checkDate" fieldName="CheckDate" label="check Date" />
+    <column name="status" fieldName="Status" label="Status" />
+    <column name="statusMsg" fieldName="StatusMsg" label="status Msg" />
+    <column name="orderProfitDollar" fieldName="OrderProfitDollar" label="order Profit Dollar" />
+    <column name="orderProfitPct" fieldName="OrderProfitPct" label="order Profit Pct" />
+    <column name="noShortLengths" fieldName="NoShortLengths" label="no Short Lengths" />
+    <column name="email" fieldName="Email" label="Email" />
+    <column name="invoiceSeqNumber" fieldName="InvoiceSeqNumber" label="invoice Seq Number" />
+    <column name="emailStatements" fieldName="EmailStatements" label="email Statements" />
+    <column name="price" fieldName="Price" label="Price" format="c" />
+    <column name="pricePer" fieldName="PricePer" label="price Per" format="c" />
+    <column name="salesEntryErrorRate" fieldName="SalesEntryErrorRate" label="sales Entry Error Rate" />
+    <column name="flagIfAllOrderLinesShipped" fieldName="FlagIfAllOrderLinesShipped" label="flag If All Order Lines Shipped" />
+    <column name="pocketWood" fieldName="PocketWood" label="pocket Wood" />
+    <column name="location" fieldName="Location" label="Location" />
+    <column name="daysToOrder" fieldName="DaysToOrder" label="days To Order" />
+    <column name="daysNegotiation" fieldName="DaysNegotiation" label="days Negotiation" />
+    <column name="leadDays" fieldName="LeadDays" label="lead Days" />
+    <column name="safetyStock" fieldName="SafetyStock" label="safety Stock" />
+    <column name="daysTransit" fieldName="DaysTransit" label="days Transit" />
+  </columns>
+</dataModel>

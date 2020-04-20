@@ -1,0 +1,1191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataController name="RegularUser" conflictDetection="overwriteChanges" label="Regular User" xmlns="urn:schemas-codeontime-com:data-aquarium">
+  <commands>
+    <command id="command1" type="Text">
+      <text><![CDATA[
+select
+	"RegularUser"."ID" "ID"
+	,"RegularUser"."BASVERSION" "Basversion"
+	,"RegularUser"."BASTIMESTAMP" "Bastimestamp"
+	,"RegularUser"."AccessLevel" "AccessLevel"
+	,"RegularUser"."Theme" "Theme"
+	,"RegularUser"."TimeZone" "TimeZone"
+	,"RegularUser"."Password" "Password"
+	,"RegularUser"."RTL" "Rtl"
+	,"RegularUser"."LoginName" "LoginName"
+	,"RegularUser"."Locale" "Locale"
+	,"RegularUser"."fullName" "FullName"
+	,"RegularUser"."onlyPocketWood" "OnlyPocketWood"
+	,"RegularUser"."headingForTripCustomerSummary" "HeadingForTripCustomerSummary"
+	,"RegularUser"."genericMsg" "GenericMsg"
+	,"RegularUser"."selectedTripCalendar_REN" "SelectedtripcalendarRen"
+	,"RegularUser"."selectedTripCalendar_RID" "SelectedtripcalendarRid"
+	,"RegularUser"."selectedTripCalendar_RMA" "SelectedtripcalendarRma"
+	,"RegularUser"."length" "Length"
+	,"RegularUser"."selectedCustomerDashboard_REN" "SelectedcustomerdashboardRen"
+	,"RegularUser"."selectedCustomerDashboard_RID" "SelectedcustomerdashboardRid"
+	,"RegularUser"."selectedCustomerDashboard_RMA" "SelectedcustomerdashboardRma"
+	,"RegularUser"."CADUnDigTo" "CadunDigTo"
+	,"RegularUser"."seeAllCustomers" "SeeAllCustomers"
+	,"RegularUser"."vendorIDForPurchaseAdvisory" "VendorIdforPurchaseAdvisory"
+	,"RegularUser"."CADSkipIntact" "CadskipIntact"
+	,"RegularUser"."ShowOrderLinesBelowStock" "ShowOrderLinesBelowStock"
+	,"RegularUser"."onlyStock" "OnlyStock"
+	,"RegularUser"."quoteHeader" "QuoteHeader"
+	,"RegularUser"."firsttDateForTripQuery" "FirsttDateForTripQuery"
+	,"RegularUser"."dateLastPAUpdated" "DateLastPaupdated"
+	,"RegularUser"."projectedCost" "ProjectedCost"
+	,"RegularUser"."scriptText" "ScriptText"
+	,"RegularUser"."CADHandle" "Cadhandle"
+	,"RegularUser"."selectedCustomerContact_REN" "SelectedcustomercontactRen"
+	,"RegularUser"."selectedCustomerContact_RID" "SelectedcustomercontactRid"
+	,"RegularUser"."selectedCustomerContact_RMA" "SelectedcustomercontactRma"
+	,"RegularUser"."flagToAddUnit" "FlagToAddUnit"
+	,"RegularUser"."selectedPurchaseLine_REN" "SelectedpurchaselineRen"
+	,"RegularUser"."selectedPurchaseLine_RID" "SelectedpurchaselineRid"
+	,"RegularUser"."selectedPurchaseLine_RMA" "SelectedpurchaselineRma"
+	,"RegularUser"."selectedSectorID" "SelectedSectorID"
+	,"RegularUser"."lastUnit" "LastUnit"
+	,"RegularUser"."UMAvailableFormatted" "UmavailableFormatted"
+	,"RegularUser"."CADOnlyTripped" "CadonlyTripped"
+	,"RegularUser"."customerForQuoteQuery_REN" "CustomerforquotequeryRen"
+	,"RegularUser"."customerForQuoteQuery_RID" "CustomerforquotequeryRid"
+	,"RegularUser"."customerForQuoteQuery_RMA" "CustomerforquotequeryRma"
+	,"RegularUser"."netCost" "NetCost"
+	,"RegularUser"."CADMaxNoOfSource" "CadmaxNoOfSource"
+	,"RegularUser"."purchaseAdvisoryFromDate" "PurchaseAdvisoryFromDate"
+	,"RegularUser"."previousNoDaysForPurchaseAdvisory" "PreviousNoDaysForPurchaseAdvisory"
+	,"RegularUser"."sourceUnitNumber" "SourceUnitNumber"
+	,"RegularUser"."paymentBatchHeaderID" "PaymentBatchHeaderID"
+	,"RegularUser"."selectedUnit_REN" "SelectedunitRen"
+	,"RegularUser"."selectedUnit_RID" "SelectedunitRid"
+	,"RegularUser"."selectedUnit_RMA" "SelectedunitRma"
+	,"RegularUser"."suggestedPrice" "SuggestedPrice"
+	,"RegularUser"."selectedTemplate_REN" "SelectedtemplateRen"
+	,"RegularUser"."selectedTemplate_RID" "SelectedtemplateRid"
+	,"RegularUser"."selectedTemplate_RMA" "SelectedtemplateRma"
+	,"RegularUser"."dim2" "Dim2"
+	,"RegularUser"."emailForReports" "EmailForReports"
+	,"RegularUser"."UMOpenPOFormatted" "UmopenPoformatted"
+	,"RegularUser"."dim1" "Dim1"
+	,"RegularUser"."lastOrderNumber" "LastOrderNumber"
+	,"RegularUser"."route" "Route"
+	,"RegularUser"."filterReminderCustomers" "FilterReminderCustomers"
+	,"RegularUser"."dateFilterForQuoteQuery" "DateFilterForQuoteQuery"
+	,"RegularUser"."CADShowDesigned" "CadshowDesigned"
+	,"RegularUser"."itemSearch3" "ItemSearch3"
+	,"RegularUser"."itemSearch2" "ItemSearch2"
+	,"RegularUser"."qtyToAddToPO" "QtyToAddToPo"
+	,"RegularUser"."tripDate" "TripDate"
+	,"RegularUser"."noTripDashboard" "NoTripDashboard"
+	,"RegularUser"."noDaysForPurchaseAdvisory" "NoDaysForPurchaseAdvisory"
+	,"RegularUser"."CADIgnoreDates" "CadignoreDates"
+	,"RegularUser"."CADPlus" "Cadplus"
+	,"RegularUser"."terminalSalesDate" "TerminalSalesDate"
+	,"RegularUser"."selectedItem_REN" "SelecteditemRen"
+	,"RegularUser"."selectedItem_RID" "SelecteditemRid"
+	,"RegularUser"."selectedItem_RMA" "SelecteditemRma"
+	,"RegularUser"."numberOpenQuotes" "NumberOpenQuotes"
+	,"RegularUser"."itemID" "ItemID"
+	,"RegularUser"."selectedPurchaseOrder_REN" "SelectedpurchaseorderRen"
+	,"RegularUser"."selectedPurchaseOrder_RID" "SelectedpurchaseorderRid"
+	,"RegularUser"."selectedPurchaseOrder_RMA" "SelectedpurchaseorderRma"
+	,"RegularUser"."dropShipAddress" "DropShipAddress"
+	,"RegularUser"."tank" "Tank"
+	,"RegularUser"."designerComments" "DesignerComments"
+	,"RegularUser"."quotePO" "QuotePo"
+	,"RegularUser"."CADCustomer" "Cadcustomer"
+	,"RegularUser"."firstUnit" "FirstUnit"
+	,"RegularUser"."purchaseAdvisoryThruDate" "PurchaseAdvisoryThruDate"
+	,"RegularUser"."CADWide" "Cadwide"
+	,"RegularUser"."printOrderAcknowledgement" "PrintOrderAcknowledgement"
+	,"RegularUser"."selectedTerminalItem_REN" "SelectedterminalitemRen"
+	,"RegularUser"."selectedTerminalItem_RID" "SelectedterminalitemRid"
+	,"RegularUser"."selectedTerminalItem_RMA" "SelectedterminalitemRma"
+	,"RegularUser"."CADSourceUnitNumber" "CadsourceUnitNumber"
+	,"RegularUser"."CADDrillNumber" "CaddrillNumber"
+	,"RegularUser"."showOnlyRollingTripFlag" "ShowOnlyRollingTripFlag"
+	,"RegularUser"."tripNumber" "TripNumber"
+	,"RegularUser"."newStopNumber" "NewStopNumber"
+	,"RegularUser"."selectedCADSourceUnit_REN" "SelectedcadsourceunitRen"
+	,"RegularUser"."selectedCADSourceUnit_RID" "SelectedcadsourceunitRid"
+	,"RegularUser"."selectedCADSourceUnit_RMA" "SelectedcadsourceunitRma"
+	,"RegularUser"."parametersForJasper" "ParametersForJasper"
+	,"RegularUser"."selectedVendor_REN" "SelectedvendorRen"
+	,"RegularUser"."selectedVendor_RID" "SelectedvendorRid"
+	,"RegularUser"."selectedVendor_RMA" "SelectedvendorRma"
+	,"RegularUser"."designStatus" "DesignStatus"
+	,"RegularUser"."unitNumber" "UnitNumber"
+	,"RegularUser"."CADHigh" "Cadhigh"
+	,"RegularUser"."selectedFreshQuote_REN" "SelectedfreshquoteRen"
+	,"RegularUser"."selectedFreshQuote_RID" "SelectedfreshquoteRid"
+	,"RegularUser"."selectedFreshQuote_RMA" "SelectedfreshquoteRma"
+	,"RegularUser"."selectedCustomer_REN" "SelectedcustomerRen"
+	,"RegularUser"."selectedCustomer_RID" "SelectedcustomerRid"
+	,"RegularUser"."selectedCustomer_RMA" "SelectedcustomerRma"
+	,"RegularUser"."customerFilterActive" "CustomerFilterActive"
+	,"RegularUser"."CADTotalPieces" "CadtotalPieces"
+	,"RegularUser"."terminalPONumber_REN" "TerminalponumberRen"
+	,"RegularUser"."terminalPONumber_RID" "TerminalponumberRid"
+	,"RegularUser"."terminalPONumber_RMA" "TerminalponumberRma"
+	,"RegularUser"."selectedOrderLine_REN" "SelectedorderlineRen"
+	,"RegularUser"."selectedOrderLine_RID" "SelectedorderlineRid"
+	,"RegularUser"."selectedOrderLine_RMA" "SelectedorderlineRma"
+	,"RegularUser"."numberOfCustomersToContact" "NumberOfCustomersToContact"
+	,"RegularUser"."noUnits" "NoUnits"
+	,"RegularUser"."selectedQuote_REN" "SelectedquoteRen"
+	,"RegularUser"."selectedQuote_RID" "SelectedquoteRid"
+	,"RegularUser"."selectedQuote_RMA" "SelectedquoteRma"
+	,"RegularUser"."selectedOrder_REN" "SelectedorderRen"
+	,"RegularUser"."selectedOrder_RID" "SelectedorderRid"
+	,"RegularUser"."selectedOrder_RMA" "SelectedorderRma"
+	,"RegularUser"."showCustomerForm" "ShowCustomerForm"
+	,"RegularUser"."selectedBillTo_REN" "SelectedbilltoRen"
+	,"RegularUser"."selectedBillTo_RID" "SelectedbilltoRid"
+	,"RegularUser"."selectedBillTo_RMA" "SelectedbilltoRma"
+	,"RegularUser"."itemSearch" "ItemSearch"
+	,"RegularUser"."CADKillWithLess" "CadkillWithLess"
+	,"RegularUser"."CADTripNumber" "CadtripNumber"
+	,"RegularUser"."numberFreshQuotes" "NumberFreshQuotes"
+	,"RegularUser"."selectedTripStop_REN" "SelectedtripstopRen"
+	,"RegularUser"."selectedTripStop_RID" "SelectedtripstopRid"
+	,"RegularUser"."selectedTripStop_RMA" "SelectedtripstopRma"
+	,"RegularUser"."costToAddToPO" "CostToAddToPo"
+	,"RegularUser"."CADNumberOfTargets" "CadnumberOfTargets"
+	,"RegularUser"."CADShowUndesigned" "CadshowUndesigned"
+	,"RegularUser"."selectedCADDrill_REN" "SelectedcaddrillRen"
+	,"RegularUser"."selectedCADDrill_RID" "SelectedcaddrillRid"
+	,"RegularUser"."selectedCADDrill_RMA" "SelectedcaddrillRma"
+	,"RegularUser"."selectedInventoryRebate_REN" "SelectedinventoryrebateRen"
+	,"RegularUser"."selectedInventoryRebate_RID" "SelectedinventoryrebateRid"
+	,"RegularUser"."selectedInventoryRebate_RMA" "SelectedinventoryrebateRma"
+	,"RegularUser"."stockOnly" "StockOnly"
+	,"RegularUser"."futureBuysDateThru" "FutureBuysDateThru"
+	,"RegularUser"."selectedTerminalCommitment_REN" "SelectedterminalcommitmentRen"
+	,"RegularUser"."selectedTerminalCommitment_RID" "SelectedterminalcommitmentRid"
+	,"RegularUser"."selectedTerminalCommitment_RMA" "SelectedterminalcommitmentRma"
+	,"RegularUser"."selectedTerminalShipment_REN" "SelectedterminalshipmentRen"
+	,"RegularUser"."selectedTerminalShipment_RID" "SelectedterminalshipmentRid"
+	,"RegularUser"."selectedTerminalShipment_RMA" "SelectedterminalshipmentRma"
+	,"RegularUser"."terminalSelected" "TerminalSelected"
+	,"RegularUser"."futureBuysFlag" "FutureBuysFlag"
+	,"RegularUser"."selectedPurchaseAdvisory_REN" "SelectedpurchaseadvisoryRen"
+	,"RegularUser"."selectedPurchaseAdvisory_RID" "SelectedpurchaseadvisoryRid"
+	,"RegularUser"."selectedPurchaseAdvisory_RMA" "SelectedpurchaseadvisoryRma"
+	,"RegularUser"."showAllPurchaseAdvisory" "ShowAllPurchaseAdvisory"
+	,"RegularUser"."salesRepSupport" "SalesRepSupport"
+	,"RegularUser"."selectedUM" "SelectedUm"
+	,"RegularUser"."pattern" "Pattern"
+	,"RegularUser"."product" "Product"
+	,"RegularUser"."oldCode" "OldCode"
+	,"RegularUser"."selectedTemplatableInventory_REN" "SelectedtemplatableinventoryRen"
+	,"RegularUser"."selectedTemplatableInventory_RID" "SelectedtemplatableinventoryRid"
+	,"RegularUser"."selectedTemplatableInventory_RMA" "SelectedtemplatableinventoryRma"
+	,"RegularUser"."marketCost" "MarketCost"
+	,"RegularUser"."marketPrice" "MarketPrice"
+	,"RegularUser"."GPPercent" "Gppercent"
+	,"RegularUser"."profitTotal" "ProfitTotal"
+	,"RegularUser"."salesTotal" "SalesTotal"
+	,"RegularUser"."editingQuoteThatIsAnOrder" "EditingQuoteThatIsAnOrder"
+	,"RegularUser"."MEOQ" "Meoq"
+	,"RegularUser"."invoiceDate" "InvoiceDate"
+	,"RegularUser"."RESTAttribute" "Restattribute"
+	,"RegularUser"."selectedDate" "SelectedDate"
+	,"RegularUser"."selectedReturns_REN" "SelectedreturnsRen"
+	,"RegularUser"."selectedReturns_RID" "SelectedreturnsRid"
+	,"RegularUser"."selectedReturns_RMA" "SelectedreturnsRma"
+	,"RegularUser"."selectedUnitsToCombine_REN" "SelectedunitstocombineRen"
+	,"RegularUser"."selectedUnitsToCombine_RID" "SelectedunitstocombineRid"
+	,"RegularUser"."selectedUnitsToCombine_RMA" "SelectedunitstocombineRma"
+	,"RegularUser"."selectedOrderLineForTransfer_REN" "SelectedorderlinefortransferRen"
+	,"RegularUser"."selectedOrderLineForTransfer_RID" "SelectedorderlinefortransferRid"
+	,"RegularUser"."selectedOrderLineForTransfer_RMA" "SelectedorderlinefortransferRma"
+	,"RegularUser"."selectedSourceUnit_REN" "SelectedsourceunitRen"
+	,"RegularUser"."selectedSourceUnit_RID" "SelectedsourceunitRid"
+	,"RegularUser"."selectedSourceUnit_RMA" "SelectedsourceunitRma"
+	,"RegularUser"."selectedTargetUnit_REN" "SelectedtargetunitRen"
+	,"RegularUser"."selectedTargetUnit_RID" "SelectedtargetunitRid"
+	,"RegularUser"."selectedTargetUnit_RMA" "SelectedtargetunitRma"
+	,"RegularUser"."itemIDForItemsForUnitsToCombine" "ItemIdforItemsForUnitsToCombine"
+	,"RegularUser"."unitsToCombineFrom" "UnitsToCombineFrom"
+	,"RegularUser"."SessionTimeout" "SessionTimeout"
+	,"RegularUser"."heading" "Heading"
+	,"RegularUser"."returnActionToDisplay" "ReturnActionToDisplay"
+	,"RegularUser"."totLensWithStock" "TotLensWithStock"
+	,"RegularUser"."orderLineFor3rdParty" "OrderLineFor3rdParty"
+	,"RegularUser"."flagToAddNewUnitToOrderUnits" "FlagToAddNewUnitToOrderUnits"
+	,"RegularUser"."newUnitCost" "NewUnitCost"
+	,"RegularUser"."wholeUnitsUMStock" "WholeUnitsUmstock"
+	,"RegularUser"."showOnlyOpenPOs" "ShowOnlyOpenPos"
+	,"RegularUser"."selectedCADDrillForSubstitute_REN" "SelectedcaddrillforsubstituteRen"
+	,"RegularUser"."selectedCADDrillForSubstitute_RID" "SelectedcaddrillforsubstituteRid"
+	,"RegularUser"."selectedCADDrillForSubstitute_RMA" "SelectedcaddrillforsubstituteRma"
+	,"RegularUser"."noLengths" "NoLengths"
+	,"RegularUser"."fieldRep" "FieldRep"
+	,"RegularUser"."serviceChargeDescription" "ServiceChargeDescription"
+	,"RegularUser"."UMAllocatedToOrderLine" "UmallocatedToOrderLine"
+	,"RegularUser"."totalDiscount" "TotalDiscount"
+	,"RegularUser"."totalPaid" "TotalPaid"
+	,"RegularUser"."orderNumber" "OrderNumber"
+	,"RegularUser"."totalWholeUnits" "TotalWholeUnits"
+	,"RegularUser"."totalDesignedLines" "TotalDesignedLines"
+	,"RegularUser"."quoteLineBelowMinPrice" "QuoteLineBelowMinPrice"
+	,"RegularUser"."daysInPayPeriod" "DaysInPayPeriod"
+	,"RegularUser"."checkDate" "CheckDate"
+	,"RegularUser"."status" "Status"
+	,"RegularUser"."statusMsg" "StatusMsg"
+	,"RegularUser"."orderProfitDollar" "OrderProfitDollar"
+	,"RegularUser"."orderProfitPct" "OrderProfitPct"
+	,"RegularUser"."noShortLengths" "NoShortLengths"
+	,"RegularUser"."email" "Email"
+	,"RegularUser"."invoiceSeqNumber" "InvoiceSeqNumber"
+	,"RegularUser"."emailStatements" "EmailStatements"
+	,"RegularUser"."price" "Price"
+	,"RegularUser"."pricePer" "PricePer"
+	,"RegularUser"."salesEntryErrorRate" "SalesEntryErrorRate"
+	,"RegularUser"."flagIfAllOrderLinesShipped" "FlagIfAllOrderLinesShipped"
+	,"RegularUser"."pocketWood" "PocketWood"
+	,"RegularUser"."location" "Location"
+	,"RegularUser"."daysToOrder" "DaysToOrder"
+	,"RegularUser"."daysNegotiation" "DaysNegotiation"
+	,"RegularUser"."leadDays" "LeadDays"
+	,"RegularUser"."safetyStock" "SafetyStock"
+	,"RegularUser"."daysTransit" "DaysTransit"
+from "dbo"."RegularUser" "RegularUser"
+]]></text>
+    </command>
+  </commands>
+  <fields>
+    <field name="ID" type="Int32" allowNulls="false" isPrimaryKey="true" label="Id" />
+    <field name="Basversion" type="Int32" label="Basversion" showInSummary="true" />
+    <field name="Bastimestamp" type="DateTime" label="Bastimestamp" showInSummary="true" />
+    <field name="AccessLevel" type="String" label="Access Level" length="50" showInSummary="true" />
+    <field name="Theme" type="String" label="Theme" length="80" showInSummary="true" />
+    <field name="TimeZone" type="String" label="Time Zone" length="80" showInSummary="true" />
+    <field name="Password" type="String" label="Password" length="40" />
+    <field name="Rtl" type="Boolean" label="Rtl" />
+    <field name="LoginName" type="String" label="Login Name" length="40" />
+    <field name="Locale" type="String" label="Locale" length="50" />
+    <field name="FullName" type="String" label="full Name" length="50" />
+    <field name="OnlyPocketWood" type="Boolean" label="only Pocket Wood" />
+    <field name="HeadingForTripCustomerSummary" type="String" label="heading For Trip Customer Summary" length="100" />
+    <field name="GenericMsg" type="String" label="generic Msg" length="120" />
+    <field name="SelectedtripcalendarRen" type="String" label="selected Trip Calendar REN" length="80" />
+    <field name="SelectedtripcalendarRid" type="Int64" label="selected Trip Calendar RID" />
+    <field name="SelectedtripcalendarRma" type="String" label="selected Trip Calendar RMA" length="80" />
+    <field name="Length" type="Int64" label="Length" />
+    <field name="SelectedcustomerdashboardRen" type="String" label="selected Customer Dashboard REN" length="80" />
+    <field name="SelectedcustomerdashboardRid" type="Int64" label="selected Customer Dashboard RID" />
+    <field name="SelectedcustomerdashboardRma" type="String" label="selected Customer Dashboard RMA" length="80" />
+    <field name="CadunDigTo" type="String" label="CAD Un Dig To" length="3" />
+    <field name="SeeAllCustomers" type="Boolean" label="see All Customers" />
+    <field name="VendorIdforPurchaseAdvisory" type="Int64" label="vendor ID For Purchase Advisory" />
+    <field name="CadskipIntact" type="Boolean" label="CAD Skip Intact" />
+    <field name="ShowOrderLinesBelowStock" type="Boolean" label="Show Order Lines Below Stock" />
+    <field name="OnlyStock" type="Boolean" label="only Stock" />
+    <field name="QuoteHeader" type="String" label="quote Header" length="500" />
+    <field name="FirsttDateForTripQuery" type="DateTime" label="firstt Date For Trip Query" />
+    <field name="DateLastPaupdated" type="DateTime" label="date Last PA Updated" />
+    <field name="ProjectedCost" type="Double" dataFormatString="c" label="projected Cost" />
+    <field name="ScriptText" type="String" allowQBE="false" allowSorting="false" label="script Text" />
+    <field name="Cadhandle" type="String" label="CAD Handle" length="3" />
+    <field name="SelectedcustomercontactRen" type="String" label="selected Customer Contact REN" length="80" />
+    <field name="SelectedcustomercontactRid" type="Int64" label="selected Customer Contact RID" />
+    <field name="SelectedcustomercontactRma" type="String" label="selected Customer Contact RMA" length="80" />
+    <field name="FlagToAddUnit" type="Boolean" label="flag To Add Unit" />
+    <field name="SelectedpurchaselineRen" type="String" label="selected Purchase Line REN" length="80" />
+    <field name="SelectedpurchaselineRid" type="Int64" label="selected Purchase Line RID" />
+    <field name="SelectedpurchaselineRma" type="String" label="selected Purchase Line RMA" length="80" />
+    <field name="SelectedSectorID" type="Int64" label="selected Sector ID" />
+    <field name="LastUnit" type="Int64" label="last Unit" />
+    <field name="UmavailableFormatted" type="String" label="UM Available Formatted" length="20" />
+    <field name="CadonlyTripped" type="Boolean" label="CAD Only Tripped" />
+    <field name="CustomerforquotequeryRen" type="String" label="customer For Quote Query REN" length="80" />
+    <field name="CustomerforquotequeryRid" type="Int64" label="customer For Quote Query RID" />
+    <field name="CustomerforquotequeryRma" type="String" label="customer For Quote Query RMA" length="80" />
+    <field name="NetCost" type="Double" dataFormatString="c" label="net Cost" />
+    <field name="CadmaxNoOfSource" type="Int64" label="CAD Max No Of Source" />
+    <field name="PurchaseAdvisoryFromDate" type="DateTime" label="purchase Advisory From Date" />
+    <field name="PreviousNoDaysForPurchaseAdvisory" type="Int64" label="previous No Days For Purchase Advisory" />
+    <field name="SourceUnitNumber" type="Int64" label="source Unit Number" />
+    <field name="PaymentBatchHeaderID" type="Int64" label="payment Batch Header ID" />
+    <field name="SelectedunitRen" type="String" label="selected Unit REN" length="80" />
+    <field name="SelectedunitRid" type="Int64" label="selected Unit RID" />
+    <field name="SelectedunitRma" type="String" label="selected Unit RMA" length="80" />
+    <field name="SuggestedPrice" type="Double" dataFormatString="c" label="suggested Price" />
+    <field name="SelectedtemplateRen" type="String" label="selected Template REN" length="80" />
+    <field name="SelectedtemplateRid" type="Int64" label="selected Template RID" />
+    <field name="SelectedtemplateRma" type="String" label="selected Template RMA" length="80" />
+    <field name="Dim2" type="Double" label="Dim2" />
+    <field name="EmailForReports" type="String" label="email For Reports" length="60" />
+    <field name="UmopenPoformatted" type="String" label="UM Open PO Formatted" length="20" />
+    <field name="Dim1" type="Double" label="Dim1" />
+    <field name="LastOrderNumber" type="Int64" label="last Order Number" />
+    <field name="Route" type="String" label="Route" length="90" />
+    <field name="FilterReminderCustomers" type="Boolean" label="filter Reminder Customers" />
+    <field name="DateFilterForQuoteQuery" type="DateTime" label="date Filter For Quote Query" />
+    <field name="CadshowDesigned" type="Boolean" label="CAD Show Designed" />
+    <field name="ItemSearch3" type="String" label="item Search3" length="40" />
+    <field name="ItemSearch2" type="String" label="item Search2" length="40" />
+    <field name="QtyToAddToPo" type="Double" label="qty To Add To PO" />
+    <field name="TripDate" type="DateTime" label="trip Date" />
+    <field name="NoTripDashboard" type="Int64" label="no Trip Dashboard" />
+    <field name="NoDaysForPurchaseAdvisory" type="Int64" label="no Days For Purchase Advisory" />
+    <field name="CadignoreDates" type="Boolean" label="CAD Ignore Dates" />
+    <field name="Cadplus" type="Double" label="CAD Plus" />
+    <field name="TerminalSalesDate" type="DateTime" label="terminal Sales Date" />
+    <field name="SelecteditemRen" type="String" label="selected Item REN" length="80" />
+    <field name="SelecteditemRid" type="Int64" label="selected Item RID" />
+    <field name="SelecteditemRma" type="String" label="selected Item RMA" length="80" />
+    <field name="NumberOpenQuotes" type="Int64" label="number Open Quotes" />
+    <field name="ItemID" type="Int64" label="item ID" />
+    <field name="SelectedpurchaseorderRen" type="String" label="selected Purchase Order REN" length="80" />
+    <field name="SelectedpurchaseorderRid" type="Int64" label="selected Purchase Order RID" />
+    <field name="SelectedpurchaseorderRma" type="String" label="selected Purchase Order RMA" length="80" />
+    <field name="DropShipAddress" type="String" allowQBE="false" allowSorting="false" label="drop Ship Address" length="2000" />
+    <field name="Tank" type="String" label="Tank" length="5" />
+    <field name="DesignerComments" type="String" label="designer Comments" length="200" />
+    <field name="QuotePo" type="String" label="quote PO" length="20" />
+    <field name="Cadcustomer" type="Int64" label="CAD Customer" />
+    <field name="FirstUnit" type="Int64" label="first Unit" />
+    <field name="PurchaseAdvisoryThruDate" type="DateTime" label="purchase Advisory Thru Date" />
+    <field name="Cadwide" type="Double" label="CAD Wide" />
+    <field name="PrintOrderAcknowledgement" type="Boolean" label="print Order Acknowledgement" />
+    <field name="SelectedterminalitemRen" type="String" label="selected Terminal Item REN" length="80" />
+    <field name="SelectedterminalitemRid" type="Int64" label="selected Terminal Item RID" />
+    <field name="SelectedterminalitemRma" type="String" label="selected Terminal Item RMA" length="80" />
+    <field name="CadsourceUnitNumber" type="Int64" label="CAD Source Unit Number" />
+    <field name="CaddrillNumber" type="Int64" label="CAD Drill Number" />
+    <field name="ShowOnlyRollingTripFlag" type="Boolean" label="show Only Rolling Trip Flag" />
+    <field name="TripNumber" type="Int64" label="trip Number" />
+    <field name="NewStopNumber" type="Int64" label="new Stop Number" />
+    <field name="SelectedcadsourceunitRen" type="String" label="selected CAD Source Unit REN" length="80" />
+    <field name="SelectedcadsourceunitRid" type="Int64" label="selected CAD Source Unit RID" />
+    <field name="SelectedcadsourceunitRma" type="String" label="selected CAD Source Unit RMA" length="80" />
+    <field name="ParametersForJasper" type="String" label="parameters For Jasper" length="500" />
+    <field name="SelectedvendorRen" type="String" label="selected Vendor REN" length="80" />
+    <field name="SelectedvendorRid" type="Int64" label="selected Vendor RID" />
+    <field name="SelectedvendorRma" type="String" label="selected Vendor RMA" length="80" />
+    <field name="DesignStatus" type="String" label="design Status" length="20" />
+    <field name="UnitNumber" type="Int64" label="unit Number" />
+    <field name="Cadhigh" type="Double" label="CAD High" />
+    <field name="SelectedfreshquoteRen" type="String" label="selected Fresh Quote REN" length="80" />
+    <field name="SelectedfreshquoteRid" type="Int64" label="selected Fresh Quote RID" />
+    <field name="SelectedfreshquoteRma" type="String" label="selected Fresh Quote RMA" length="80" />
+    <field name="SelectedcustomerRen" type="String" label="selected Customer REN" length="80" />
+    <field name="SelectedcustomerRid" type="Int64" label="selected Customer RID" />
+    <field name="SelectedcustomerRma" type="String" label="selected Customer RMA" length="80" />
+    <field name="CustomerFilterActive" type="Boolean" label="customer Filter Active" />
+    <field name="CadtotalPieces" type="Int64" label="CAD Total Pieces" />
+    <field name="TerminalponumberRen" type="String" label="terminal PO Number REN" length="80" />
+    <field name="TerminalponumberRid" type="Int64" label="terminal PO Number RID" />
+    <field name="TerminalponumberRma" type="String" label="terminal PO Number RMA" length="80" />
+    <field name="SelectedorderlineRen" type="String" label="selected Order Line REN" length="80" />
+    <field name="SelectedorderlineRid" type="Int64" label="selected Order Line RID" />
+    <field name="SelectedorderlineRma" type="String" label="selected Order Line RMA" length="80" />
+    <field name="NumberOfCustomersToContact" type="Int64" label="number Of Customers To Contact" />
+    <field name="NoUnits" type="Int64" label="no Units" />
+    <field name="SelectedquoteRen" type="String" label="selected Quote REN" length="80" />
+    <field name="SelectedquoteRid" type="Int64" label="selected Quote RID" />
+    <field name="SelectedquoteRma" type="String" label="selected Quote RMA" length="80" />
+    <field name="SelectedorderRen" type="String" label="selected Order REN" length="80" />
+    <field name="SelectedorderRid" type="Int64" label="selected Order RID" />
+    <field name="SelectedorderRma" type="String" label="selected Order RMA" length="80" />
+    <field name="ShowCustomerForm" type="Boolean" label="show Customer Form" />
+    <field name="SelectedbilltoRen" type="String" label="selected Bill To REN" length="80" />
+    <field name="SelectedbilltoRid" type="Int64" label="selected Bill To RID" />
+    <field name="SelectedbilltoRma" type="String" label="selected Bill To RMA" length="80" />
+    <field name="ItemSearch" type="String" label="item Search" length="20" />
+    <field name="CadkillWithLess" type="Int64" label="CAD Kill With Less" />
+    <field name="CadtripNumber" type="Int64" label="CAD Trip Number" />
+    <field name="NumberFreshQuotes" type="Int64" label="number Fresh Quotes" />
+    <field name="SelectedtripstopRen" type="String" label="selected Trip Stop REN" length="80" />
+    <field name="SelectedtripstopRid" type="Int64" label="selected Trip Stop RID" />
+    <field name="SelectedtripstopRma" type="String" label="selected Trip Stop RMA" length="80" />
+    <field name="CostToAddToPo" type="Double" dataFormatString="c" label="cost To Add To PO" />
+    <field name="CadnumberOfTargets" type="Int64" label="CAD Number Of Targets" />
+    <field name="CadshowUndesigned" type="Boolean" label="CAD Show Undesigned" />
+    <field name="SelectedcaddrillRen" type="String" label="selected CAD Drill REN" length="80" />
+    <field name="SelectedcaddrillRid" type="Int64" label="selected CAD Drill RID" />
+    <field name="SelectedcaddrillRma" type="String" label="selected CAD Drill RMA" length="80" />
+    <field name="SelectedinventoryrebateRen" type="String" label="selected Inventory Rebate REN" length="80" />
+    <field name="SelectedinventoryrebateRid" type="Int64" label="selected Inventory Rebate RID" />
+    <field name="SelectedinventoryrebateRma" type="String" label="selected Inventory Rebate RMA" length="80" />
+    <field name="StockOnly" type="Boolean" label="stock Only" />
+    <field name="FutureBuysDateThru" type="DateTime" label="future Buys Date Thru" />
+    <field name="SelectedterminalcommitmentRen" type="String" label="selected Terminal Commitment REN" length="80" />
+    <field name="SelectedterminalcommitmentRid" type="Int64" label="selected Terminal Commitment RID" />
+    <field name="SelectedterminalcommitmentRma" type="String" label="selected Terminal Commitment RMA" length="80" />
+    <field name="SelectedterminalshipmentRen" type="String" label="selected Terminal Shipment REN" length="80" />
+    <field name="SelectedterminalshipmentRid" type="Int64" label="selected Terminal Shipment RID" />
+    <field name="SelectedterminalshipmentRma" type="String" label="selected Terminal Shipment RMA" length="80" />
+    <field name="TerminalSelected" type="Boolean" label="terminal Selected" />
+    <field name="FutureBuysFlag" type="Boolean" label="future Buys Flag" />
+    <field name="SelectedpurchaseadvisoryRen" type="String" label="selected Purchase Advisory REN" length="80" />
+    <field name="SelectedpurchaseadvisoryRid" type="Int64" label="selected Purchase Advisory RID" />
+    <field name="SelectedpurchaseadvisoryRma" type="String" label="selected Purchase Advisory RMA" length="80" />
+    <field name="ShowAllPurchaseAdvisory" type="Boolean" label="show All Purchase Advisory" />
+    <field name="SalesRepSupport" type="Double" label="sales Rep Support" />
+    <field name="SelectedUm" type="String" label="selected UM" length="20" />
+    <field name="Pattern" type="String" label="Pattern" length="20" />
+    <field name="Product" type="String" label="Product" length="20" />
+    <field name="OldCode" type="String" label="old Code" length="4" />
+    <field name="SelectedtemplatableinventoryRen" type="String" label="selected Templatable Inventory REN" length="80" />
+    <field name="SelectedtemplatableinventoryRid" type="Int64" label="selected Templatable Inventory RID" />
+    <field name="SelectedtemplatableinventoryRma" type="String" label="selected Templatable Inventory RMA" length="80" />
+    <field name="MarketCost" type="Double" dataFormatString="c" label="market Cost" />
+    <field name="MarketPrice" type="Double" dataFormatString="c" label="market Price" />
+    <field name="Gppercent" type="Double" label="GP Percent" />
+    <field name="ProfitTotal" type="Double" label="profit Total" />
+    <field name="SalesTotal" type="Double" label="sales Total" />
+    <field name="EditingQuoteThatIsAnOrder" type="Boolean" label="editing Quote That Is An Order" />
+    <field name="Meoq" type="Int64" label="Meoq" />
+    <field name="InvoiceDate" type="DateTime" label="invoice Date" />
+    <field name="Restattribute" type="String" label="REST Attribute" length="200" />
+    <field name="SelectedDate" type="DateTime" label="selected Date" />
+    <field name="SelectedreturnsRen" type="String" label="selected Returns REN" length="80" />
+    <field name="SelectedreturnsRid" type="Int64" label="selected Returns RID" />
+    <field name="SelectedreturnsRma" type="String" label="selected Returns RMA" length="80" />
+    <field name="SelectedunitstocombineRen" type="String" label="selected Units To Combine REN" length="80" />
+    <field name="SelectedunitstocombineRid" type="Int64" label="selected Units To Combine RID" />
+    <field name="SelectedunitstocombineRma" type="String" label="selected Units To Combine RMA" length="80" />
+    <field name="SelectedorderlinefortransferRen" type="String" label="selected Order Line For Transfer REN" length="80" />
+    <field name="SelectedorderlinefortransferRid" type="Int64" label="selected Order Line For Transfer RID" />
+    <field name="SelectedorderlinefortransferRma" type="String" label="selected Order Line For Transfer RMA" length="80" />
+    <field name="SelectedsourceunitRen" type="String" label="selected Source Unit REN" length="80" />
+    <field name="SelectedsourceunitRid" type="Int64" label="selected Source Unit RID" />
+    <field name="SelectedsourceunitRma" type="String" label="selected Source Unit RMA" length="80" />
+    <field name="SelectedtargetunitRen" type="String" label="selected Target Unit REN" length="80" />
+    <field name="SelectedtargetunitRid" type="Int64" label="selected Target Unit RID" />
+    <field name="SelectedtargetunitRma" type="String" label="selected Target Unit RMA" length="80" />
+    <field name="ItemIdforItemsForUnitsToCombine" type="Double" label="item ID For Items For Units To Combine" />
+    <field name="UnitsToCombineFrom" type="Double" label="units To Combine From" />
+    <field name="SessionTimeout" type="Int64" label="Session Timeout" />
+    <field name="Heading" type="String" label="Heading" length="60" />
+    <field name="ReturnActionToDisplay" type="String" label="return Action To Display" length="20" />
+    <field name="TotLensWithStock" type="Int64" label="tot Lens With Stock" />
+    <field name="OrderLineFor3rdParty" type="Double" label="order Line For3rd Party" />
+    <field name="FlagToAddNewUnitToOrderUnits" type="Boolean" label="flag To Add New Unit To Order Units" />
+    <field name="NewUnitCost" type="Double" dataFormatString="c" label="new Unit Cost" />
+    <field name="WholeUnitsUmstock" type="Double" label="whole Units UM Stock" />
+    <field name="ShowOnlyOpenPos" type="Boolean" label="show Only Open P Os" />
+    <field name="SelectedcaddrillforsubstituteRen" type="String" label="selected CAD Drill For Substitute REN" length="80" />
+    <field name="SelectedcaddrillforsubstituteRid" type="Int64" label="selected CAD Drill For Substitute RID" />
+    <field name="SelectedcaddrillforsubstituteRma" type="String" label="selected CAD Drill For Substitute RMA" length="80" />
+    <field name="NoLengths" type="Int64" label="no Lengths" />
+    <field name="FieldRep" type="String" label="field Rep" length="5" />
+    <field name="ServiceChargeDescription" type="String" allowQBE="false" allowSorting="false" label="service Charge Description" length="2000" />
+    <field name="UmallocatedToOrderLine" type="Double" label="UM Allocated To Order Line" />
+    <field name="TotalDiscount" type="Double" label="total Discount" />
+    <field name="TotalPaid" type="Double" label="total Paid" />
+    <field name="OrderNumber" type="Double" label="order Number" />
+    <field name="TotalWholeUnits" type="Double" label="total Whole Units" />
+    <field name="TotalDesignedLines" type="Double" label="total Designed Lines" />
+    <field name="QuoteLineBelowMinPrice" type="Boolean" dataFormatString="c" label="quote Line Below Min Price" />
+    <field name="DaysInPayPeriod" type="Int64" label="days In Pay Period" />
+    <field name="CheckDate" type="DateTime" label="check Date" />
+    <field name="Status" type="Double" label="Status" />
+    <field name="StatusMsg" type="String" label="status Msg" length="1000" />
+    <field name="OrderProfitDollar" type="Double" label="order Profit Dollar" />
+    <field name="OrderProfitPct" type="Double" label="order Profit Pct" />
+    <field name="NoShortLengths" type="Double" label="no Short Lengths" />
+    <field name="Email" type="String" label="Email" length="200" />
+    <field name="InvoiceSeqNumber" type="Double" label="invoice Seq Number" />
+    <field name="EmailStatements" type="Boolean" label="email Statements" />
+    <field name="Price" type="Double" dataFormatString="c" label="Price" />
+    <field name="PricePer" type="Int64" dataFormatString="c" label="price Per" />
+    <field name="SalesEntryErrorRate" type="Double" label="sales Entry Error Rate" />
+    <field name="FlagIfAllOrderLinesShipped" type="Boolean" label="flag If All Order Lines Shipped" />
+    <field name="PocketWood" type="Boolean" label="pocket Wood" />
+    <field name="Location" type="String" label="Location" length="4" />
+    <field name="DaysToOrder" type="Int64" label="days To Order" />
+    <field name="DaysNegotiation" type="Int64" label="days Negotiation" />
+    <field name="LeadDays" type="Int64" label="lead Days" />
+    <field name="SafetyStock" type="Int64" label="safety Stock" />
+    <field name="DaysTransit" type="Int64" label="days Transit" />
+  </fields>
+  <views>
+    <view id="grid1" type="Grid" commandId="command1" label="Regular User">
+      <headerText>$DefaultGridViewDescription</headerText>
+      <dataFields>
+        <dataField fieldName="ID" columns="15" />
+        <dataField fieldName="Basversion" columns="15" />
+        <dataField fieldName="Bastimestamp" columns="10" />
+        <dataField fieldName="AccessLevel" columns="50" />
+        <dataField fieldName="Theme" />
+        <dataField fieldName="TimeZone" />
+        <dataField fieldName="Password" textMode="Password" columns="40" />
+        <dataField fieldName="Rtl" />
+        <dataField fieldName="LoginName" columns="40" />
+        <dataField fieldName="Locale" columns="50" />
+        <dataField fieldName="FullName" columns="50" />
+        <dataField fieldName="OnlyPocketWood" />
+        <dataField fieldName="HeadingForTripCustomerSummary" />
+        <dataField fieldName="GenericMsg" />
+        <dataField fieldName="SelectedtripcalendarRen" />
+        <dataField fieldName="SelectedtripcalendarRid" columns="15" />
+        <dataField fieldName="SelectedtripcalendarRma" />
+        <dataField fieldName="Length" columns="15" />
+        <dataField fieldName="SelectedcustomerdashboardRen" />
+        <dataField fieldName="SelectedcustomerdashboardRid" columns="15" />
+        <dataField fieldName="SelectedcustomerdashboardRma" />
+        <dataField fieldName="CadunDigTo" columns="3" />
+        <dataField fieldName="SeeAllCustomers" />
+        <dataField fieldName="VendorIdforPurchaseAdvisory" columns="15" />
+        <dataField fieldName="CadskipIntact" />
+        <dataField fieldName="ShowOrderLinesBelowStock" />
+        <dataField fieldName="OnlyStock" />
+        <dataField fieldName="QuoteHeader" />
+        <dataField fieldName="FirsttDateForTripQuery" columns="10" />
+        <dataField fieldName="DateLastPaupdated" columns="10" />
+        <dataField fieldName="ProjectedCost" columns="15" />
+        <dataField fieldName="ScriptText" rows="5" />
+        <dataField fieldName="Cadhandle" columns="3" />
+        <dataField fieldName="SelectedcustomercontactRen" />
+        <dataField fieldName="SelectedcustomercontactRid" columns="15" />
+        <dataField fieldName="SelectedcustomercontactRma" />
+        <dataField fieldName="FlagToAddUnit" />
+        <dataField fieldName="SelectedpurchaselineRen" />
+        <dataField fieldName="SelectedpurchaselineRid" columns="15" />
+        <dataField fieldName="SelectedpurchaselineRma" />
+        <dataField fieldName="SelectedSectorID" columns="15" />
+        <dataField fieldName="LastUnit" columns="15" />
+        <dataField fieldName="UmavailableFormatted" columns="20" />
+        <dataField fieldName="CadonlyTripped" />
+        <dataField fieldName="CustomerforquotequeryRen" />
+        <dataField fieldName="CustomerforquotequeryRid" columns="15" />
+        <dataField fieldName="CustomerforquotequeryRma" />
+        <dataField fieldName="NetCost" columns="15" />
+        <dataField fieldName="CadmaxNoOfSource" columns="15" />
+        <dataField fieldName="PurchaseAdvisoryFromDate" columns="10" />
+        <dataField fieldName="PreviousNoDaysForPurchaseAdvisory" columns="15" />
+        <dataField fieldName="SourceUnitNumber" columns="15" />
+        <dataField fieldName="PaymentBatchHeaderID" columns="15" />
+        <dataField fieldName="SelectedunitRen" />
+        <dataField fieldName="SelectedunitRid" columns="15" />
+        <dataField fieldName="SelectedunitRma" />
+        <dataField fieldName="SuggestedPrice" columns="15" />
+        <dataField fieldName="SelectedtemplateRen" />
+        <dataField fieldName="SelectedtemplateRid" columns="15" />
+        <dataField fieldName="SelectedtemplateRma" />
+        <dataField fieldName="Dim2" columns="15" />
+        <dataField fieldName="EmailForReports" />
+        <dataField fieldName="UmopenPoformatted" columns="20" />
+        <dataField fieldName="Dim1" columns="15" />
+        <dataField fieldName="LastOrderNumber" columns="15" />
+        <dataField fieldName="Route" />
+        <dataField fieldName="FilterReminderCustomers" />
+        <dataField fieldName="DateFilterForQuoteQuery" columns="10" />
+        <dataField fieldName="CadshowDesigned" />
+        <dataField fieldName="ItemSearch3" columns="40" />
+        <dataField fieldName="ItemSearch2" columns="40" />
+        <dataField fieldName="QtyToAddToPo" columns="15" />
+        <dataField fieldName="TripDate" columns="10" />
+        <dataField fieldName="NoTripDashboard" columns="15" />
+        <dataField fieldName="NoDaysForPurchaseAdvisory" columns="15" />
+        <dataField fieldName="CadignoreDates" />
+        <dataField fieldName="Cadplus" columns="15" />
+        <dataField fieldName="TerminalSalesDate" columns="10" />
+        <dataField fieldName="SelecteditemRen" />
+        <dataField fieldName="SelecteditemRid" columns="15" />
+        <dataField fieldName="SelecteditemRma" />
+        <dataField fieldName="NumberOpenQuotes" columns="15" />
+        <dataField fieldName="ItemID" columns="15" />
+        <dataField fieldName="SelectedpurchaseorderRen" />
+        <dataField fieldName="SelectedpurchaseorderRid" columns="15" />
+        <dataField fieldName="SelectedpurchaseorderRma" />
+        <dataField fieldName="DropShipAddress" rows="5" />
+        <dataField fieldName="Tank" columns="5" />
+        <dataField fieldName="DesignerComments" />
+        <dataField fieldName="QuotePo" columns="20" />
+        <dataField fieldName="Cadcustomer" columns="15" />
+        <dataField fieldName="FirstUnit" columns="15" />
+        <dataField fieldName="PurchaseAdvisoryThruDate" columns="10" />
+        <dataField fieldName="Cadwide" columns="15" />
+        <dataField fieldName="PrintOrderAcknowledgement" />
+        <dataField fieldName="SelectedterminalitemRen" />
+        <dataField fieldName="SelectedterminalitemRid" columns="15" />
+        <dataField fieldName="SelectedterminalitemRma" />
+        <dataField fieldName="CadsourceUnitNumber" columns="15" />
+        <dataField fieldName="CaddrillNumber" columns="15" />
+      </dataFields>
+    </view>
+    <view id="editForm1" type="Form" commandId="command1" label="Review Regular User">
+      <headerText>$DefaultEditViewDescription</headerText>
+      <categories>
+        <category id="c1" headerText="Regular User" flow="NewColumn">
+          <description><![CDATA[$DefaultEditDescription]]></description>
+          <dataFields>
+            <dataField fieldName="ID" columns="15" />
+            <dataField fieldName="Basversion" columns="15" />
+            <dataField fieldName="Bastimestamp" columns="10" />
+            <dataField fieldName="AccessLevel" columns="50" />
+            <dataField fieldName="Theme" />
+            <dataField fieldName="TimeZone" />
+            <dataField fieldName="Password" textMode="Password" columns="40" />
+            <dataField fieldName="Rtl" />
+            <dataField fieldName="LoginName" columns="40" />
+            <dataField fieldName="Locale" columns="50" />
+            <dataField fieldName="FullName" columns="50" />
+            <dataField fieldName="OnlyPocketWood" />
+            <dataField fieldName="HeadingForTripCustomerSummary" />
+            <dataField fieldName="GenericMsg" />
+            <dataField fieldName="SelectedtripcalendarRen" />
+            <dataField fieldName="SelectedtripcalendarRid" columns="15" />
+            <dataField fieldName="SelectedtripcalendarRma" />
+            <dataField fieldName="Length" columns="15" />
+            <dataField fieldName="SelectedcustomerdashboardRen" />
+            <dataField fieldName="SelectedcustomerdashboardRid" columns="15" />
+            <dataField fieldName="SelectedcustomerdashboardRma" />
+            <dataField fieldName="CadunDigTo" columns="3" />
+            <dataField fieldName="SeeAllCustomers" />
+            <dataField fieldName="VendorIdforPurchaseAdvisory" columns="15" />
+            <dataField fieldName="CadskipIntact" />
+            <dataField fieldName="ShowOrderLinesBelowStock" />
+            <dataField fieldName="OnlyStock" />
+            <dataField fieldName="QuoteHeader" />
+            <dataField fieldName="FirsttDateForTripQuery" columns="10" />
+            <dataField fieldName="DateLastPaupdated" columns="10" />
+            <dataField fieldName="ProjectedCost" columns="15" />
+            <dataField fieldName="ScriptText" rows="5" />
+            <dataField fieldName="Cadhandle" columns="3" />
+            <dataField fieldName="SelectedcustomercontactRen" />
+            <dataField fieldName="SelectedcustomercontactRid" columns="15" />
+            <dataField fieldName="SelectedcustomercontactRma" />
+            <dataField fieldName="FlagToAddUnit" />
+            <dataField fieldName="SelectedpurchaselineRen" />
+            <dataField fieldName="SelectedpurchaselineRid" columns="15" />
+            <dataField fieldName="SelectedpurchaselineRma" />
+            <dataField fieldName="SelectedSectorID" columns="15" />
+            <dataField fieldName="LastUnit" columns="15" />
+            <dataField fieldName="UmavailableFormatted" columns="20" />
+            <dataField fieldName="CadonlyTripped" />
+            <dataField fieldName="CustomerforquotequeryRen" />
+            <dataField fieldName="CustomerforquotequeryRid" columns="15" />
+            <dataField fieldName="CustomerforquotequeryRma" />
+            <dataField fieldName="NetCost" columns="15" />
+            <dataField fieldName="CadmaxNoOfSource" columns="15" />
+            <dataField fieldName="PurchaseAdvisoryFromDate" columns="10" />
+            <dataField fieldName="PreviousNoDaysForPurchaseAdvisory" columns="15" />
+            <dataField fieldName="SourceUnitNumber" columns="15" />
+            <dataField fieldName="PaymentBatchHeaderID" columns="15" />
+            <dataField fieldName="SelectedunitRen" />
+            <dataField fieldName="SelectedunitRid" columns="15" />
+            <dataField fieldName="SelectedunitRma" />
+            <dataField fieldName="SuggestedPrice" columns="15" />
+            <dataField fieldName="SelectedtemplateRen" />
+            <dataField fieldName="SelectedtemplateRid" columns="15" />
+            <dataField fieldName="SelectedtemplateRma" />
+            <dataField fieldName="Dim2" columns="15" />
+            <dataField fieldName="EmailForReports" />
+            <dataField fieldName="UmopenPoformatted" columns="20" />
+            <dataField fieldName="Dim1" columns="15" />
+            <dataField fieldName="LastOrderNumber" columns="15" />
+            <dataField fieldName="Route" />
+            <dataField fieldName="FilterReminderCustomers" />
+            <dataField fieldName="DateFilterForQuoteQuery" columns="10" />
+            <dataField fieldName="CadshowDesigned" />
+            <dataField fieldName="ItemSearch3" columns="40" />
+            <dataField fieldName="ItemSearch2" columns="40" />
+            <dataField fieldName="QtyToAddToPo" columns="15" />
+            <dataField fieldName="TripDate" columns="10" />
+            <dataField fieldName="NoTripDashboard" columns="15" />
+            <dataField fieldName="NoDaysForPurchaseAdvisory" columns="15" />
+            <dataField fieldName="CadignoreDates" />
+            <dataField fieldName="Cadplus" columns="15" />
+            <dataField fieldName="TerminalSalesDate" columns="10" />
+            <dataField fieldName="SelecteditemRen" />
+            <dataField fieldName="SelecteditemRid" columns="15" />
+            <dataField fieldName="SelecteditemRma" />
+            <dataField fieldName="NumberOpenQuotes" columns="15" />
+            <dataField fieldName="ItemID" columns="15" />
+            <dataField fieldName="SelectedpurchaseorderRen" />
+            <dataField fieldName="SelectedpurchaseorderRid" columns="15" />
+            <dataField fieldName="SelectedpurchaseorderRma" />
+            <dataField fieldName="DropShipAddress" rows="5" />
+            <dataField fieldName="Tank" columns="5" />
+            <dataField fieldName="DesignerComments" />
+            <dataField fieldName="QuotePo" columns="20" />
+            <dataField fieldName="Cadcustomer" columns="15" />
+            <dataField fieldName="FirstUnit" columns="15" />
+            <dataField fieldName="PurchaseAdvisoryThruDate" columns="10" />
+            <dataField fieldName="Cadwide" columns="15" />
+            <dataField fieldName="PrintOrderAcknowledgement" />
+            <dataField fieldName="SelectedterminalitemRen" />
+            <dataField fieldName="SelectedterminalitemRid" columns="15" />
+            <dataField fieldName="SelectedterminalitemRma" />
+            <dataField fieldName="CadsourceUnitNumber" columns="15" />
+            <dataField fieldName="CaddrillNumber" columns="15" />
+            <dataField fieldName="ShowOnlyRollingTripFlag" />
+            <dataField fieldName="TripNumber" columns="15" />
+            <dataField fieldName="NewStopNumber" columns="15" />
+            <dataField fieldName="SelectedcadsourceunitRen" />
+            <dataField fieldName="SelectedcadsourceunitRid" columns="15" />
+            <dataField fieldName="SelectedcadsourceunitRma" />
+            <dataField fieldName="ParametersForJasper" />
+            <dataField fieldName="SelectedvendorRen" />
+            <dataField fieldName="SelectedvendorRid" columns="15" />
+            <dataField fieldName="SelectedvendorRma" />
+            <dataField fieldName="DesignStatus" columns="20" />
+            <dataField fieldName="UnitNumber" columns="15" />
+            <dataField fieldName="Cadhigh" columns="15" />
+            <dataField fieldName="SelectedfreshquoteRen" />
+            <dataField fieldName="SelectedfreshquoteRid" columns="15" />
+            <dataField fieldName="SelectedfreshquoteRma" />
+            <dataField fieldName="SelectedcustomerRen" />
+            <dataField fieldName="SelectedcustomerRid" columns="15" />
+            <dataField fieldName="SelectedcustomerRma" />
+            <dataField fieldName="CustomerFilterActive" />
+            <dataField fieldName="CadtotalPieces" columns="15" />
+            <dataField fieldName="TerminalponumberRen" />
+            <dataField fieldName="TerminalponumberRid" columns="15" />
+            <dataField fieldName="TerminalponumberRma" />
+            <dataField fieldName="SelectedorderlineRen" />
+            <dataField fieldName="SelectedorderlineRid" columns="15" />
+            <dataField fieldName="SelectedorderlineRma" />
+            <dataField fieldName="NumberOfCustomersToContact" columns="15" />
+            <dataField fieldName="NoUnits" columns="15" />
+            <dataField fieldName="SelectedquoteRen" />
+            <dataField fieldName="SelectedquoteRid" columns="15" />
+            <dataField fieldName="SelectedquoteRma" />
+            <dataField fieldName="SelectedorderRen" />
+            <dataField fieldName="SelectedorderRid" columns="15" />
+            <dataField fieldName="SelectedorderRma" />
+            <dataField fieldName="ShowCustomerForm" />
+            <dataField fieldName="SelectedbilltoRen" />
+            <dataField fieldName="SelectedbilltoRid" columns="15" />
+            <dataField fieldName="SelectedbilltoRma" />
+            <dataField fieldName="ItemSearch" columns="20" />
+            <dataField fieldName="CadkillWithLess" columns="15" />
+            <dataField fieldName="CadtripNumber" columns="15" />
+            <dataField fieldName="NumberFreshQuotes" columns="15" />
+            <dataField fieldName="SelectedtripstopRen" />
+            <dataField fieldName="SelectedtripstopRid" columns="15" />
+            <dataField fieldName="SelectedtripstopRma" />
+            <dataField fieldName="CostToAddToPo" columns="15" />
+            <dataField fieldName="CadnumberOfTargets" columns="15" />
+            <dataField fieldName="CadshowUndesigned" />
+            <dataField fieldName="SelectedcaddrillRen" />
+            <dataField fieldName="SelectedcaddrillRid" columns="15" />
+            <dataField fieldName="SelectedcaddrillRma" />
+            <dataField fieldName="SelectedinventoryrebateRen" />
+            <dataField fieldName="SelectedinventoryrebateRid" columns="15" />
+            <dataField fieldName="SelectedinventoryrebateRma" />
+            <dataField fieldName="StockOnly" />
+            <dataField fieldName="FutureBuysDateThru" columns="10" />
+            <dataField fieldName="SelectedterminalcommitmentRen" />
+            <dataField fieldName="SelectedterminalcommitmentRid" columns="15" />
+            <dataField fieldName="SelectedterminalcommitmentRma" />
+            <dataField fieldName="SelectedterminalshipmentRen" />
+            <dataField fieldName="SelectedterminalshipmentRid" columns="15" />
+            <dataField fieldName="SelectedterminalshipmentRma" />
+            <dataField fieldName="TerminalSelected" />
+            <dataField fieldName="FutureBuysFlag" />
+            <dataField fieldName="SelectedpurchaseadvisoryRen" />
+            <dataField fieldName="SelectedpurchaseadvisoryRid" columns="15" />
+            <dataField fieldName="SelectedpurchaseadvisoryRma" />
+            <dataField fieldName="ShowAllPurchaseAdvisory" />
+            <dataField fieldName="SalesRepSupport" columns="15" />
+            <dataField fieldName="SelectedUm" columns="20" />
+            <dataField fieldName="Pattern" columns="20" />
+            <dataField fieldName="Product" columns="20" />
+            <dataField fieldName="OldCode" columns="4" />
+            <dataField fieldName="SelectedtemplatableinventoryRen" />
+            <dataField fieldName="SelectedtemplatableinventoryRid" columns="15" />
+            <dataField fieldName="SelectedtemplatableinventoryRma" />
+            <dataField fieldName="MarketCost" columns="15" />
+            <dataField fieldName="MarketPrice" columns="15" />
+            <dataField fieldName="Gppercent" columns="15" />
+            <dataField fieldName="ProfitTotal" columns="15" />
+            <dataField fieldName="SalesTotal" columns="15" />
+            <dataField fieldName="EditingQuoteThatIsAnOrder" />
+            <dataField fieldName="Meoq" columns="15" />
+            <dataField fieldName="InvoiceDate" columns="10" />
+            <dataField fieldName="Restattribute" />
+            <dataField fieldName="SelectedDate" columns="10" />
+            <dataField fieldName="SelectedreturnsRen" />
+            <dataField fieldName="SelectedreturnsRid" columns="15" />
+            <dataField fieldName="SelectedreturnsRma" />
+            <dataField fieldName="SelectedunitstocombineRen" />
+            <dataField fieldName="SelectedunitstocombineRid" columns="15" />
+            <dataField fieldName="SelectedunitstocombineRma" />
+            <dataField fieldName="SelectedorderlinefortransferRen" />
+            <dataField fieldName="SelectedorderlinefortransferRid" columns="15" />
+            <dataField fieldName="SelectedorderlinefortransferRma" />
+            <dataField fieldName="SelectedsourceunitRen" />
+            <dataField fieldName="SelectedsourceunitRid" columns="15" />
+            <dataField fieldName="SelectedsourceunitRma" />
+            <dataField fieldName="SelectedtargetunitRen" />
+            <dataField fieldName="SelectedtargetunitRid" columns="15" />
+            <dataField fieldName="SelectedtargetunitRma" />
+            <dataField fieldName="ItemIdforItemsForUnitsToCombine" columns="15" />
+            <dataField fieldName="UnitsToCombineFrom" columns="15" />
+            <dataField fieldName="SessionTimeout" columns="15" />
+            <dataField fieldName="Heading" />
+            <dataField fieldName="ReturnActionToDisplay" columns="20" />
+            <dataField fieldName="TotLensWithStock" columns="15" />
+            <dataField fieldName="OrderLineFor3rdParty" columns="15" />
+            <dataField fieldName="FlagToAddNewUnitToOrderUnits" />
+            <dataField fieldName="NewUnitCost" columns="15" />
+            <dataField fieldName="WholeUnitsUmstock" columns="15" />
+            <dataField fieldName="ShowOnlyOpenPos" />
+            <dataField fieldName="SelectedcaddrillforsubstituteRen" />
+            <dataField fieldName="SelectedcaddrillforsubstituteRid" columns="15" />
+            <dataField fieldName="SelectedcaddrillforsubstituteRma" />
+            <dataField fieldName="NoLengths" columns="15" />
+            <dataField fieldName="FieldRep" columns="5" />
+            <dataField fieldName="ServiceChargeDescription" rows="5" />
+            <dataField fieldName="UmallocatedToOrderLine" columns="15" />
+            <dataField fieldName="TotalDiscount" columns="15" />
+            <dataField fieldName="TotalPaid" columns="15" />
+            <dataField fieldName="OrderNumber" columns="15" />
+            <dataField fieldName="TotalWholeUnits" columns="15" />
+            <dataField fieldName="TotalDesignedLines" columns="15" />
+            <dataField fieldName="QuoteLineBelowMinPrice" />
+            <dataField fieldName="DaysInPayPeriod" columns="15" />
+            <dataField fieldName="CheckDate" columns="10" />
+            <dataField fieldName="Status" columns="15" />
+            <dataField fieldName="StatusMsg" />
+            <dataField fieldName="OrderProfitDollar" columns="15" />
+            <dataField fieldName="OrderProfitPct" columns="15" />
+            <dataField fieldName="NoShortLengths" columns="15" />
+            <dataField fieldName="Email" />
+            <dataField fieldName="InvoiceSeqNumber" columns="15" />
+            <dataField fieldName="EmailStatements" />
+            <dataField fieldName="Price" columns="15" />
+            <dataField fieldName="PricePer" columns="15" />
+            <dataField fieldName="SalesEntryErrorRate" columns="15" />
+            <dataField fieldName="FlagIfAllOrderLinesShipped" />
+            <dataField fieldName="PocketWood" />
+            <dataField fieldName="Location" columns="4" />
+            <dataField fieldName="DaysToOrder" columns="15" />
+            <dataField fieldName="DaysNegotiation" columns="15" />
+            <dataField fieldName="LeadDays" columns="15" />
+            <dataField fieldName="SafetyStock" columns="15" />
+            <dataField fieldName="DaysTransit" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+    <view id="createForm1" type="Form" commandId="command1" label="New Regular User">
+      <headerText>$DefaultCreateViewDescription</headerText>
+      <categories>
+        <category id="c1" flow="NewColumn">
+          <description><![CDATA[$DefaultNewDescription]]></description>
+          <dataFields>
+            <dataField fieldName="ID" columns="15" />
+            <dataField fieldName="Basversion" columns="15" />
+            <dataField fieldName="Bastimestamp" columns="10" />
+            <dataField fieldName="AccessLevel" columns="50" />
+            <dataField fieldName="Theme" />
+            <dataField fieldName="TimeZone" />
+            <dataField fieldName="Password" textMode="Password" columns="40" />
+            <dataField fieldName="Rtl" />
+            <dataField fieldName="LoginName" columns="40" />
+            <dataField fieldName="Locale" columns="50" />
+            <dataField fieldName="FullName" columns="50" />
+            <dataField fieldName="OnlyPocketWood" />
+            <dataField fieldName="HeadingForTripCustomerSummary" />
+            <dataField fieldName="GenericMsg" />
+            <dataField fieldName="SelectedtripcalendarRen" />
+            <dataField fieldName="SelectedtripcalendarRid" columns="15" />
+            <dataField fieldName="SelectedtripcalendarRma" />
+            <dataField fieldName="Length" columns="15" />
+            <dataField fieldName="SelectedcustomerdashboardRen" />
+            <dataField fieldName="SelectedcustomerdashboardRid" columns="15" />
+            <dataField fieldName="SelectedcustomerdashboardRma" />
+            <dataField fieldName="CadunDigTo" columns="3" />
+            <dataField fieldName="SeeAllCustomers" />
+            <dataField fieldName="VendorIdforPurchaseAdvisory" columns="15" />
+            <dataField fieldName="CadskipIntact" />
+            <dataField fieldName="ShowOrderLinesBelowStock" />
+            <dataField fieldName="OnlyStock" />
+            <dataField fieldName="QuoteHeader" />
+            <dataField fieldName="FirsttDateForTripQuery" columns="10" />
+            <dataField fieldName="DateLastPaupdated" columns="10" />
+            <dataField fieldName="ProjectedCost" columns="15" />
+            <dataField fieldName="ScriptText" rows="5" />
+            <dataField fieldName="Cadhandle" columns="3" />
+            <dataField fieldName="SelectedcustomercontactRen" />
+            <dataField fieldName="SelectedcustomercontactRid" columns="15" />
+            <dataField fieldName="SelectedcustomercontactRma" />
+            <dataField fieldName="FlagToAddUnit" />
+            <dataField fieldName="SelectedpurchaselineRen" />
+            <dataField fieldName="SelectedpurchaselineRid" columns="15" />
+            <dataField fieldName="SelectedpurchaselineRma" />
+            <dataField fieldName="SelectedSectorID" columns="15" />
+            <dataField fieldName="LastUnit" columns="15" />
+            <dataField fieldName="UmavailableFormatted" columns="20" />
+            <dataField fieldName="CadonlyTripped" />
+            <dataField fieldName="CustomerforquotequeryRen" />
+            <dataField fieldName="CustomerforquotequeryRid" columns="15" />
+            <dataField fieldName="CustomerforquotequeryRma" />
+            <dataField fieldName="NetCost" columns="15" />
+            <dataField fieldName="CadmaxNoOfSource" columns="15" />
+            <dataField fieldName="PurchaseAdvisoryFromDate" columns="10" />
+            <dataField fieldName="PreviousNoDaysForPurchaseAdvisory" columns="15" />
+            <dataField fieldName="SourceUnitNumber" columns="15" />
+            <dataField fieldName="PaymentBatchHeaderID" columns="15" />
+            <dataField fieldName="SelectedunitRen" />
+            <dataField fieldName="SelectedunitRid" columns="15" />
+            <dataField fieldName="SelectedunitRma" />
+            <dataField fieldName="SuggestedPrice" columns="15" />
+            <dataField fieldName="SelectedtemplateRen" />
+            <dataField fieldName="SelectedtemplateRid" columns="15" />
+            <dataField fieldName="SelectedtemplateRma" />
+            <dataField fieldName="Dim2" columns="15" />
+            <dataField fieldName="EmailForReports" />
+            <dataField fieldName="UmopenPoformatted" columns="20" />
+            <dataField fieldName="Dim1" columns="15" />
+            <dataField fieldName="LastOrderNumber" columns="15" />
+            <dataField fieldName="Route" />
+            <dataField fieldName="FilterReminderCustomers" />
+            <dataField fieldName="DateFilterForQuoteQuery" columns="10" />
+            <dataField fieldName="CadshowDesigned" />
+            <dataField fieldName="ItemSearch3" columns="40" />
+            <dataField fieldName="ItemSearch2" columns="40" />
+            <dataField fieldName="QtyToAddToPo" columns="15" />
+            <dataField fieldName="TripDate" columns="10" />
+            <dataField fieldName="NoTripDashboard" columns="15" />
+            <dataField fieldName="NoDaysForPurchaseAdvisory" columns="15" />
+            <dataField fieldName="CadignoreDates" />
+            <dataField fieldName="Cadplus" columns="15" />
+            <dataField fieldName="TerminalSalesDate" columns="10" />
+            <dataField fieldName="SelecteditemRen" />
+            <dataField fieldName="SelecteditemRid" columns="15" />
+            <dataField fieldName="SelecteditemRma" />
+            <dataField fieldName="NumberOpenQuotes" columns="15" />
+            <dataField fieldName="ItemID" columns="15" />
+            <dataField fieldName="SelectedpurchaseorderRen" />
+            <dataField fieldName="SelectedpurchaseorderRid" columns="15" />
+            <dataField fieldName="SelectedpurchaseorderRma" />
+            <dataField fieldName="DropShipAddress" rows="5" />
+            <dataField fieldName="Tank" columns="5" />
+            <dataField fieldName="DesignerComments" />
+            <dataField fieldName="QuotePo" columns="20" />
+            <dataField fieldName="Cadcustomer" columns="15" />
+            <dataField fieldName="FirstUnit" columns="15" />
+            <dataField fieldName="PurchaseAdvisoryThruDate" columns="10" />
+            <dataField fieldName="Cadwide" columns="15" />
+            <dataField fieldName="PrintOrderAcknowledgement" />
+            <dataField fieldName="SelectedterminalitemRen" />
+            <dataField fieldName="SelectedterminalitemRid" columns="15" />
+            <dataField fieldName="SelectedterminalitemRma" />
+            <dataField fieldName="CadsourceUnitNumber" columns="15" />
+            <dataField fieldName="CaddrillNumber" columns="15" />
+            <dataField fieldName="ShowOnlyRollingTripFlag" />
+            <dataField fieldName="TripNumber" columns="15" />
+            <dataField fieldName="NewStopNumber" columns="15" />
+            <dataField fieldName="SelectedcadsourceunitRen" />
+            <dataField fieldName="SelectedcadsourceunitRid" columns="15" />
+            <dataField fieldName="SelectedcadsourceunitRma" />
+            <dataField fieldName="ParametersForJasper" />
+            <dataField fieldName="SelectedvendorRen" />
+            <dataField fieldName="SelectedvendorRid" columns="15" />
+            <dataField fieldName="SelectedvendorRma" />
+            <dataField fieldName="DesignStatus" columns="20" />
+            <dataField fieldName="UnitNumber" columns="15" />
+            <dataField fieldName="Cadhigh" columns="15" />
+            <dataField fieldName="SelectedfreshquoteRen" />
+            <dataField fieldName="SelectedfreshquoteRid" columns="15" />
+            <dataField fieldName="SelectedfreshquoteRma" />
+            <dataField fieldName="SelectedcustomerRen" />
+            <dataField fieldName="SelectedcustomerRid" columns="15" />
+            <dataField fieldName="SelectedcustomerRma" />
+            <dataField fieldName="CustomerFilterActive" />
+            <dataField fieldName="CadtotalPieces" columns="15" />
+            <dataField fieldName="TerminalponumberRen" />
+            <dataField fieldName="TerminalponumberRid" columns="15" />
+            <dataField fieldName="TerminalponumberRma" />
+            <dataField fieldName="SelectedorderlineRen" />
+            <dataField fieldName="SelectedorderlineRid" columns="15" />
+            <dataField fieldName="SelectedorderlineRma" />
+            <dataField fieldName="NumberOfCustomersToContact" columns="15" />
+            <dataField fieldName="NoUnits" columns="15" />
+            <dataField fieldName="SelectedquoteRen" />
+            <dataField fieldName="SelectedquoteRid" columns="15" />
+            <dataField fieldName="SelectedquoteRma" />
+            <dataField fieldName="SelectedorderRen" />
+            <dataField fieldName="SelectedorderRid" columns="15" />
+            <dataField fieldName="SelectedorderRma" />
+            <dataField fieldName="ShowCustomerForm" />
+            <dataField fieldName="SelectedbilltoRen" />
+            <dataField fieldName="SelectedbilltoRid" columns="15" />
+            <dataField fieldName="SelectedbilltoRma" />
+            <dataField fieldName="ItemSearch" columns="20" />
+            <dataField fieldName="CadkillWithLess" columns="15" />
+            <dataField fieldName="CadtripNumber" columns="15" />
+            <dataField fieldName="NumberFreshQuotes" columns="15" />
+            <dataField fieldName="SelectedtripstopRen" />
+            <dataField fieldName="SelectedtripstopRid" columns="15" />
+            <dataField fieldName="SelectedtripstopRma" />
+            <dataField fieldName="CostToAddToPo" columns="15" />
+            <dataField fieldName="CadnumberOfTargets" columns="15" />
+            <dataField fieldName="CadshowUndesigned" />
+            <dataField fieldName="SelectedcaddrillRen" />
+            <dataField fieldName="SelectedcaddrillRid" columns="15" />
+            <dataField fieldName="SelectedcaddrillRma" />
+            <dataField fieldName="SelectedinventoryrebateRen" />
+            <dataField fieldName="SelectedinventoryrebateRid" columns="15" />
+            <dataField fieldName="SelectedinventoryrebateRma" />
+            <dataField fieldName="StockOnly" />
+            <dataField fieldName="FutureBuysDateThru" columns="10" />
+            <dataField fieldName="SelectedterminalcommitmentRen" />
+            <dataField fieldName="SelectedterminalcommitmentRid" columns="15" />
+            <dataField fieldName="SelectedterminalcommitmentRma" />
+            <dataField fieldName="SelectedterminalshipmentRen" />
+            <dataField fieldName="SelectedterminalshipmentRid" columns="15" />
+            <dataField fieldName="SelectedterminalshipmentRma" />
+            <dataField fieldName="TerminalSelected" />
+            <dataField fieldName="FutureBuysFlag" />
+            <dataField fieldName="SelectedpurchaseadvisoryRen" />
+            <dataField fieldName="SelectedpurchaseadvisoryRid" columns="15" />
+            <dataField fieldName="SelectedpurchaseadvisoryRma" />
+            <dataField fieldName="ShowAllPurchaseAdvisory" />
+            <dataField fieldName="SalesRepSupport" columns="15" />
+            <dataField fieldName="SelectedUm" columns="20" />
+            <dataField fieldName="Pattern" columns="20" />
+            <dataField fieldName="Product" columns="20" />
+            <dataField fieldName="OldCode" columns="4" />
+            <dataField fieldName="SelectedtemplatableinventoryRen" />
+            <dataField fieldName="SelectedtemplatableinventoryRid" columns="15" />
+            <dataField fieldName="SelectedtemplatableinventoryRma" />
+            <dataField fieldName="MarketCost" columns="15" />
+            <dataField fieldName="MarketPrice" columns="15" />
+            <dataField fieldName="Gppercent" columns="15" />
+            <dataField fieldName="ProfitTotal" columns="15" />
+            <dataField fieldName="SalesTotal" columns="15" />
+            <dataField fieldName="EditingQuoteThatIsAnOrder" />
+            <dataField fieldName="Meoq" columns="15" />
+            <dataField fieldName="InvoiceDate" columns="10" />
+            <dataField fieldName="Restattribute" />
+            <dataField fieldName="SelectedDate" columns="10" />
+            <dataField fieldName="SelectedreturnsRen" />
+            <dataField fieldName="SelectedreturnsRid" columns="15" />
+            <dataField fieldName="SelectedreturnsRma" />
+            <dataField fieldName="SelectedunitstocombineRen" />
+            <dataField fieldName="SelectedunitstocombineRid" columns="15" />
+            <dataField fieldName="SelectedunitstocombineRma" />
+            <dataField fieldName="SelectedorderlinefortransferRen" />
+            <dataField fieldName="SelectedorderlinefortransferRid" columns="15" />
+            <dataField fieldName="SelectedorderlinefortransferRma" />
+            <dataField fieldName="SelectedsourceunitRen" />
+            <dataField fieldName="SelectedsourceunitRid" columns="15" />
+            <dataField fieldName="SelectedsourceunitRma" />
+            <dataField fieldName="SelectedtargetunitRen" />
+            <dataField fieldName="SelectedtargetunitRid" columns="15" />
+            <dataField fieldName="SelectedtargetunitRma" />
+            <dataField fieldName="ItemIdforItemsForUnitsToCombine" columns="15" />
+            <dataField fieldName="UnitsToCombineFrom" columns="15" />
+            <dataField fieldName="SessionTimeout" columns="15" />
+            <dataField fieldName="Heading" />
+            <dataField fieldName="ReturnActionToDisplay" columns="20" />
+            <dataField fieldName="TotLensWithStock" columns="15" />
+            <dataField fieldName="OrderLineFor3rdParty" columns="15" />
+            <dataField fieldName="FlagToAddNewUnitToOrderUnits" />
+            <dataField fieldName="NewUnitCost" columns="15" />
+            <dataField fieldName="WholeUnitsUmstock" columns="15" />
+            <dataField fieldName="ShowOnlyOpenPos" />
+            <dataField fieldName="SelectedcaddrillforsubstituteRen" />
+            <dataField fieldName="SelectedcaddrillforsubstituteRid" columns="15" />
+            <dataField fieldName="SelectedcaddrillforsubstituteRma" />
+            <dataField fieldName="NoLengths" columns="15" />
+            <dataField fieldName="FieldRep" columns="5" />
+            <dataField fieldName="ServiceChargeDescription" rows="5" />
+            <dataField fieldName="UmallocatedToOrderLine" columns="15" />
+            <dataField fieldName="TotalDiscount" columns="15" />
+            <dataField fieldName="TotalPaid" columns="15" />
+            <dataField fieldName="OrderNumber" columns="15" />
+            <dataField fieldName="TotalWholeUnits" columns="15" />
+            <dataField fieldName="TotalDesignedLines" columns="15" />
+            <dataField fieldName="QuoteLineBelowMinPrice" />
+            <dataField fieldName="DaysInPayPeriod" columns="15" />
+            <dataField fieldName="CheckDate" columns="10" />
+            <dataField fieldName="Status" columns="15" />
+            <dataField fieldName="StatusMsg" />
+            <dataField fieldName="OrderProfitDollar" columns="15" />
+            <dataField fieldName="OrderProfitPct" columns="15" />
+            <dataField fieldName="NoShortLengths" columns="15" />
+            <dataField fieldName="Email" />
+            <dataField fieldName="InvoiceSeqNumber" columns="15" />
+            <dataField fieldName="EmailStatements" />
+            <dataField fieldName="Price" columns="15" />
+            <dataField fieldName="PricePer" columns="15" />
+            <dataField fieldName="SalesEntryErrorRate" columns="15" />
+            <dataField fieldName="FlagIfAllOrderLinesShipped" />
+            <dataField fieldName="PocketWood" />
+            <dataField fieldName="Location" columns="4" />
+            <dataField fieldName="DaysToOrder" columns="15" />
+            <dataField fieldName="DaysNegotiation" columns="15" />
+            <dataField fieldName="LeadDays" columns="15" />
+            <dataField fieldName="SafetyStock" columns="15" />
+            <dataField fieldName="DaysTransit" columns="15" />
+          </dataFields>
+        </category>
+      </categories>
+    </view>
+  </views>
+  <actions>
+    <actionGroup id="ag1" scope="Grid">
+      <action id="a1" commandName="Select" commandArgument="editForm1" />
+      <action id="a2" commandName="Edit" />
+      <action id="a3" commandName="Delete" />
+      <action id="a6" />
+      <action id="a7" commandName="New" commandArgument="grid1" />
+      <action id="a8" commandName="Duplicate" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag2" scope="Form">
+      <action id="a1" commandName="Edit" />
+      <action id="a2" commandName="Delete" />
+      <action id="a3" commandName="Cancel" />
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" commandArgument="Save" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" commandArgument="Save" />
+      <action id="a7" whenLastCommandName="New" commandName="Insert" commandArgument="SaveAndNew" />
+      <action id="a8" whenLastCommandName="New" commandName="Cancel" />
+      <action id="a9" whenLastCommandName="Duplicate" commandName="Insert" />
+      <action id="a10" whenLastCommandName="Duplicate" commandName="Cancel" />
+      <action id="a13" whenLastCommandName="Insert" whenLastCommandArgument="Save" whenView="createForm1" commandName="Select" commandArgument="editForm1" whenClientScript="this.hasDetails()" />
+      <action id="a14" whenLastCommandName="Insert" whenLastCommandArgument="SaveAndNew" commandName="New" commandArgument="createForm1" />
+    </actionGroup>
+    <actionGroup id="ag3" scope="ActionBar" headerText="New" flat="true">
+      <action id="a1" commandName="New" commandArgument="createForm1" cssClass="NewIcon" />
+    </actionGroup>
+    <actionGroup id="ag4" scope="ActionBar" headerText="Edit/Delete" flat="true">
+      <action id="a1" whenKeySelected="true" commandName="Edit" commandArgument="editForm1" cssClass="EditIcon" whenView="grid1" />
+      <action id="a2" whenKeySelected="true" commandName="Delete" cssClass="DeleteIcon" whenView="grid1" />
+    </actionGroup>
+    <actionGroup id="ag5" scope="ActionBar" headerText="Actions">
+      <action id="a1" commandName="ExportCsv" />
+      <action id="a2" />
+      <action id="a3" commandName="ExportRowset" />
+      <action id="a4" commandName="ExportRss" />
+      <action id="a5" />
+      <action id="a6" commandName="Import" commandArgument="createForm1" />
+      <action id="a7" commandName="DataSheet" />
+      <action id="a8" commandName="Grid" />
+    </actionGroup>
+    <actionGroup id="ag6" scope="ActionBar" headerText="Record">
+      <action id="a1" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a2" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a3" whenLastCommandName="New" commandName="Insert" />
+      <action id="a4" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag7" scope="ActionBar" headerText="Report">
+      <action id="a1" commandName="ReportAsPdf" />
+      <action id="a2" commandName="ReportAsImage" />
+      <action id="a3" commandName="ReportAsExcel" />
+      <action id="a4" commandName="ReportAsWord" />
+    </actionGroup>
+    <actionGroup id="ag8" scope="Row">
+      <action id="a4" whenLastCommandName="Edit" commandName="Update" />
+      <action id="a5" whenLastCommandName="Edit" commandName="Cancel" />
+      <action id="a6" whenLastCommandName="New" commandName="Insert" />
+      <action id="a7" whenLastCommandName="New" commandName="Cancel" />
+    </actionGroup>
+    <actionGroup id="ag9" scope="ActionColumn">
+      <action id="a1" commandName="Edit" commandArgument="editForm1" />
+      <action id="a2" commandName="Delete" />
+    </actionGroup>
+  </actions>
+</dataController>

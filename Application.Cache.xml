@@ -50,6 +50,16 @@
       <controls />
       <about>This page allows sectors management.</about>
     </page>
+    <page name="RegularUser" title="Regular User" description="View Regular User" index="1050" path="Regular User">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="RegularUser" view="grid1" showInSummary="true" container="container1" activator="None" text="" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows regular user management.</about>
+    </page>
   </pages>
   <userControls>
     <userControl name="TableOfContents" prefix="uc" generate="Always">
